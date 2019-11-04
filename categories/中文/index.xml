@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on PEI-SHAN WU 珊珊</title>
-    <link>https://pswu11.github.io/posts/</link>
-    <description>Recent content in Posts on PEI-SHAN WU 珊珊</description>
+    <title>中文 on PEI-SHAN WU 珊珊</title>
+    <link>https://pswu11.github.io/categories/%E4%B8%AD%E6%96%87/</link>
+    <description>Recent content in 中文 on PEI-SHAN WU 珊珊</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 01 Aug 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://pswu11.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://pswu11.github.io/categories/%E4%B8%AD%E6%96%87/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -51,15 +51,6 @@
 意外得的「禮物」 當然，我雖然十分想要去Devcon，但由於票價十分昂貴，加上往返的機票與住宿，所以我今年本來並沒有參加的計畫。 一直到六月底的時候，我在推特上看到了這個訊息：
 後來的故事你們也就知道了，我因此拿到了這個進入開發者大會的門票，但這只是一個開始。 事實上，也是很多的開始。 例如在這之前，我考慮過了很多能當我第一篇Medium文章的各種主題，但我可沒有預料到，我發表的第一篇文章會是這篇： Devcon5 Scholars Program - The Beginning 我想我還會繼續寫的，不管是關於Devcon5，還是關於其他。
 其實非常的開心 — 因為在十月的開發者大會，我將會遇到很多來自世界各地的熱血人們。 如果你也打算要參加Devcon5且想要聊聊的話，非常歡迎與我聯繫相見！❤️</description>
-    </item>
-    
-    <item>
-      <title>Devcon V Scholars Program - The Beginning</title>
-      <link>https://pswu11.github.io/2019/devconscholarship/</link>
-      <pubDate>Fri, 26 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://pswu11.github.io/2019/devconscholarship/</guid>
-      <description>I am accepted! In the last two months I have thought of various of topics I could potentially use for my very first article on Medium. Well, I never expected it would be about Devcon5. But hey, this is real. On Jul. 17, 2019, I woke up in my bed seeing an email with the title [Devcon 5], which drew my attention immediately. Long story short, I received a full scholarship for attending Devcon5!</description>
     </item>
     
   </channel>
