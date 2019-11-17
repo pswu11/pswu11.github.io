@@ -6,10 +6,20 @@
     <description>Recent content in Posts on PEI-SHAN WU 珊珊 </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 04 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 12 Nov 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://pswu11.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>After the Devcon5 - what now?</title>
+      <link>https://pswu11.github.io/2019/afterdevcon/</link>
+      <pubDate>Tue, 12 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://pswu11.github.io/2019/afterdevcon/</guid>
+      <description>The Devcon5 is over. It was an amazing and fruitful experience but, what now? Back in July, I jumped into the world of blockchain with only passion, curiosity and very basic knowledge. I was such a newbie. Through Devcon Scholars Program, I have learned more about blockchain but I still feel like - it&amp;rsquo;s NOT ENOUGH.
+Even though I have read Bitcoin White Paper, learned about Solidity through ConsenSys Academy, written some articles, finished several bounties, attended many workshops but still - there are too many new things in the ecosystem everyday and I don&amp;rsquo;t know if I could ever catch up.</description>
+    </item>
     
     <item>
       <title>Linux Newbie: Running Manjaro on MacBookPro</title>
@@ -22,7 +32,7 @@ Installation First of all, it’s recommended to use the stable version from Man
     </item>
     
     <item>
-      <title>比特幣白皮書 — 這到底是什麼啦？</title>
+      <title>比特幣白皮書 Bitcoin White Paper — 這到底是什麼啦？</title>
       <link>https://pswu11.github.io/2019/bitcoinwhitepaper/</link>
       <pubDate>Thu, 01 Aug 2019 00:00:00 +0000</pubDate>
       
