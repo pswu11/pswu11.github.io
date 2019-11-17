@@ -2,6 +2,90 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
     <url>
+      <loc>https://pswu11.github.io/2019/afterdevcon/</loc>
+      
+      <lastmod>2019-11-12T00:00:00+00:00</lastmod>
+      
+      
+      <changefreq>monthly</changefreq>
+      
+      
+      <priority>0.5</priority>
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://pswu11.github.io/categories/blockchain/</loc>
+      
+      <lastmod>2019-11-12T00:00:00+00:00</lastmod>
+      
+      
+      <changefreq>monthly</changefreq>
+      
+      
+      <priority>0.5</priority>
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://pswu11.github.io/categories/career/</loc>
+      
+      <lastmod>2019-11-12T00:00:00+00:00</lastmod>
+      
+      
+      <changefreq>monthly</changefreq>
+      
+      
+      <priority>0.5</priority>
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://pswu11.github.io/categories/</loc>
+      
+      <lastmod>2019-11-12T00:00:00+00:00</lastmod>
+      
+      
+      <changefreq>monthly</changefreq>
+      
+      
+      <priority>0.5</priority>
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://pswu11.github.io/</loc>
+      
+      <lastmod>2019-11-12T00:00:00+00:00</lastmod>
+      
+      
+      <changefreq>monthly</changefreq>
+      
+      
+      <priority>0.5</priority>
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://pswu11.github.io/posts/</loc>
+      
+      <lastmod>2019-11-12T00:00:00+00:00</lastmod>
+      
+      
+      <changefreq>monthly</changefreq>
+      
+      
+      <priority>0.5</priority>
+      
+      
+    </url>
+  
+    <url>
       <loc>https://pswu11.github.io/aboutme/</loc>
       
       <lastmod>2019-11-03T00:00:00+00:00</lastmod>
@@ -16,49 +100,7 @@
     </url>
   
     <url>
-      <loc>https://pswu11.github.io/</loc>
-      
-      <lastmod>2019-11-03T00:00:00+00:00</lastmod>
-      
-      
-      <changefreq>monthly</changefreq>
-      
-      
-      <priority>0.5</priority>
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://pswu11.github.io/categories/</loc>
-      
-      <lastmod>2019-10-04T00:00:00+00:00</lastmod>
-      
-      
-      <changefreq>monthly</changefreq>
-      
-      
-      <priority>0.5</priority>
-      
-      
-    </url>
-  
-    <url>
       <loc>https://pswu11.github.io/categories/linux/</loc>
-      
-      <lastmod>2019-10-04T00:00:00+00:00</lastmod>
-      
-      
-      <changefreq>monthly</changefreq>
-      
-      
-      <priority>0.5</priority>
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://pswu11.github.io/posts/</loc>
       
       <lastmod>2019-10-04T00:00:00+00:00</lastmod>
       
@@ -87,20 +129,6 @@
   
     <url>
       <loc>https://pswu11.github.io/2019/bitcoinwhitepaper/</loc>
-      
-      <lastmod>2019-08-01T00:00:00+00:00</lastmod>
-      
-      
-      <changefreq>monthly</changefreq>
-      
-      
-      <priority>0.5</priority>
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://pswu11.github.io/categories/blockchain/</loc>
       
       <lastmod>2019-08-01T00:00:00+00:00</lastmod>
       
