@@ -167,153 +167,81 @@ Installation First of all, it’s recommended to use the stable version from Man
           
           
 
-          
-
-<p><em>The article explains how to install and set up Manjaro KDE on your Apple MacBook Pro (Early 2015) Retina 13&rdquo;. If you are a Linux newbie and want to try Manjaro too, this guide is for you!</em></p>
-
-<p><figure><img src="/images/ring.svg" data-sizes="auto" data-src="/images/manjaro1.jpeg" alt="my first manjaro desktop" class="lazyload"><figcaption class="image-caption">my first manjaro desktop</figcaption></figure></p>
-
+          <p><em>The article explains how to install and set up Manjaro KDE on your Apple MacBook Pro (Early 2015) Retina 13&rdquo;. If you are a Linux newbie and want to try Manjaro too, this guide is for you!</em></p>
+<p><img src="/images/manjaro1.jpeg" alt="my first manjaro desktop"></p>
 <h2 id="installation">Installation</h2>
-
-<p>First of all, it’s recommended to use the <strong>stable version</strong> from Manjaro. You can download the image file at its official website, and can create a bootable USB stick from that. If you never did this before, there is a step by step guide <a href="https://manjaro.org/support/firststeps/#making-a-live-system" rel="nofollow noreferrer" target="_blank">here</a> on the website. It is pretty understandable.</p>
-
+<p>First of all, it’s recommended to use the <strong>stable version</strong> from Manjaro. You can download the image file at its official website, and can create a bootable USB stick from that. If you never did this before, there is a step by step guide <a href="https://manjaro.org/support/firststeps/#making-a-live-system">here</a> on the website. It is pretty understandable.</p>
 <p>After you create the bootable USB and connect it to your laptop, restart your computer. For MacBook user, please long press the key option after reboot and choose to boot from the USB stick.</p>
-
 <p>Now, you will be able to have a first impression of your future OS.</p>
-
 <p>The whole installation process is pretty easy and smooth if you follow the installation guide.</p>
-
 <h2 id="basic-setup">Basic Setup</h2>
-
 <p>So now you have an out-of-the-box desktop environment. But there are some basic adjustments you have to do before you start to customise other parts.</p>
-
 <h3 id="update-your-system-to-the-latest-version">Update your system to the latest version.</h3>
-
 <p>The Manjaro distro is based on Arch Linux.</p>
-
 <p>For Arch Linux based distros, pacman is the package manager that is used for installing, updating, removing your packages.</p>
-
 <p>So, open the terminal and run this to update your system.</p>
-
 <p><code>sudo pacman -Syyu</code></p>
-
 <p>Then we are good to go to our next steps.</p>
-
 <h3 id="allow-aur-as-packages-source">Allow AUR as packages source.</h3>
-
-<p>There are several repositories for Arch based Linux users when you want to install new applications (or let’s say packages). As mentioned, pacman is usually used for installing packages that are offered by Manjaro maintenance team, the community. However, there are several common applications for which you will need to install from <a href="https://wiki.archlinux.org/index.php/Arch_User_Repository" rel="nofollow noreferrer" target="_blank">AUR (Arch User Repository)</a>.</p>
-
+<p>There are several repositories for Arch based Linux users when you want to install new applications (or let’s say packages). As mentioned, pacman is usually used for installing packages that are offered by Manjaro maintenance team, the community. However, there are several common applications for which you will need to install from <a href="https://wiki.archlinux.org/index.php/Arch_User_Repository">AUR (Arch User Repository)</a>.</p>
 <p>First, please install pamac, another GUI for the existing package manager. The original one is Octopi.</p>
-
 <p>Through pamac you can enable AUR as package repository.</p>
-
 <p><code>sudo pacman -S pamac</code></p>
-
 <p>Run pamac. Search for the application with name Add/Remove Software, and you will find it.</p>
-
-<p><figure><img src="/images/ring.svg" data-sizes="auto" data-src="/images/manjaro2.png" alt="pacmac manager" class="lazyload"><figcaption class="image-caption">pacmac manager</figcaption></figure></p>
-
+<p><img src="/images/manjaro2.png" alt="pacmac manager"></p>
 <p>Go to <em>Settings (the buttom at upper right) &gt; Preferences &gt; AUR</em>. Here you can enable AUR support and check the box for getting updates from AUR.</p>
-
 <p>Later we will need to install some packages from AUR through pamac.</p>
-
 <h3 id="install-and-configure-the-mbp-fan-driver">Install and configure the MBP fan driver.</h3>
-
 <p>You probably notice that the fan is not working probably. Here is how we can make the fan work on your MacBook Pro again.</p>
-
 <p>First, there are some modules to be created for the fan speed and the temperature sensors:</p>
-
 <p><code>sudo nano /etc/modules</code></p>
-
 <p>Insert these two lines to add the modules.</p>
-
 <p><code>coretemp</code></p>
-
 <p><code>applesmc</code></p>
-
 <p>Save it.</p>
-
 <p>Then we need to install mbpfan-git through our pamac.</p>
-
 <p>After that, make the sensors detectable.</p>
-
 <p><code>sudo sensors-detect</code></p>
-
 <p><code>Start the fan.</code></p>
-
 <p><code>sudo systemctl enable mbpfan</code></p>
-
 <p><code>sudo systemctl start mbpfan</code></p>
-
 <p>It is recommended to also configure the fan speed etc. with your own working preference.</p>
-
 <p><code>sudo nano /etc/mbpfan.conf</code></p>
-
 <p>My configuration file looks like this:</p>
-
 <pre><code>min_fan1_speed = 1300
 max_fan1_speed = 6100
 low_temp = 60        
 high_temp = 64       
 max_temp = 80        
 polling_interval = 3 
-</code></pre>
-
-<p>However, you could also refer to a more detailed tutorial here at <a href="https://ineed.coffee/3838/a-beginners-tutorial-for-mbpfan-under-ubuntu/" rel="nofollow noreferrer" target="_blank">ineed.coffee</a>.</p>
-
+</code></pre><p>However, you could also refer to a more detailed tutorial here at <a href="https://ineed.coffee/3838/a-beginners-tutorial-for-mbpfan-under-ubuntu/">ineed.coffee</a>.</p>
 <h3 id="adjusting-the-display-and-scaling-factors">Adjusting the display and scaling factors.</h3>
-
 <p>If you have a MacBook Pro Retina or other laptops with high resolution display, you probably notice that all the texts and icons are extremely small. In this case it’s recommended to change the scaling factor here (for Manjaro KDE):</p>
-
 <p><em>System Settings &gt; Display and Monitor &gt; Displays &gt; Scale Display</em></p>
-
 <p>Take my own setting as an example — my display resolution is 2560x1440, and with that I use 1.4 as the scaling factor.</p>
-
 <h3 id="fixing-the-suspend-issue">Fixing the suspend issue.</h3>
-
 <p>When I first time installed Manjaro, I noticed that sometimes the laptop woke up while the lid was closed. Later on, I realized it is one of the common issues when running Linux on MacBooks — the suspend doesn’t work properly.</p>
-
-<p>I found a solution in <a href="https://medium.com/@philpl/arch-linux-running-on-my-macbook-2ea525ebefe3" rel="nofollow noreferrer" target="_blank">Phil Plückthun’s article</a>.</p>
-
+<p>I found a solution in <a href="https://medium.com/@philpl/arch-linux-running-on-my-macbook-2ea525ebefe3">Phil Plückthun’s article</a>.</p>
 <p>Open the terminal and type this:</p>
-
 <p><code>sudo nano /etc/systemd/logind.conf</code></p>
-
 <p>Then, add these two lines below in the configuration and save it.</p>
-
-<p><code>HandlePowerKey=suspend</code></p>
-
+<p><code>HandlePowerKey=suspend </code></p>
 <p><code>HandleLidSwitch=suspend</code></p>
-
 <h3 id="make-your-front-camera-work-optional">Make your front camera work (optional).</h3>
-
 <p>You will have to install a specific driver in order to use the front camera on your MacBook Pro. The package name is called facetimehd.</p>
-
-<p>The gitpage page can be found <a href="https://github.com/patjak/bcwc_pcie/wiki/Get-Started" rel="nofollow noreferrer" target="_blank">here</a> and there is an intruction.</p>
-
+<p>The gitpage page can be found <a href="https://github.com/patjak/bcwc_pcie/wiki/Get-Started">here</a> and there is an intruction.</p>
 <p>I ecountered some problems here, so make sure you also check the additional notes in the instruction. That could help.</p>
-
-<h2 id="now-it-s-almost-done">Now it’s almost done.</h2>
-
+<h2 id="now-its-almost-done">Now it’s almost done.</h2>
 <h3 id="do-customization">Do customization.</h3>
-
 <p>Now it’s time to customize your desktop the way you want!</p>
-
-<p><figure><img src="/images/ring.svg" data-sizes="auto" data-src="/images/manjaro3.png" alt="my another linux desktop" class="lazyload"><figcaption class="image-caption">my another linux desktop</figcaption></figure></p>
-
+<p><img src="/images/manjaro3.png" alt="my another linux desktop"></p>
 <h3 id="get-your-favourite-applications">Get your favourite applications.</h3>
-
-<p>Linux newbie or not, as mentioned before, there are several sources of packages. When you are not sure where to find your favourite applications, you can search keywords at <a href="https://wiki.archlinux.org/" rel="nofollow noreferrer" target="_blank">ArchWiki</a>. There you will usually find possible choices to get the exact application you want, or alternatives.</p>
-
-<p>Also, if you encounter any problems while configurating your new desktop, you could join Manjaro telegram group or look for solutions at Manjaro’s offical <a href="https://forum.manjaro.org/" rel="nofollow noreferrer" target="_blank">forum</a>.</p>
-
+<p>Linux newbie or not, as mentioned before, there are several sources of packages. When you are not sure where to find your favourite applications, you can search keywords at <a href="https://wiki.archlinux.org/">ArchWiki</a>. There you will usually find possible choices to get the exact application you want, or alternatives.</p>
+<p>Also, if you encounter any problems while configurating your new desktop, you could join Manjaro telegram group or look for solutions at Manjaro’s offical <a href="https://forum.manjaro.org/">forum</a>.</p>
 <p>This is my first time installing and configuring Linux. Through this article, I record my journey of learning about Manjaro.</p>
-
 <p>I am glad that I can share my takeaways with people who are also new but interested in trying out!</p>
-
 <h2 id="i-hope-you-enjoy-using-your-new-manjaro-kde">I hope you enjoy using your new Manjaro KDE!</h2>
-
-<p>Note: This article is also published on Medium <a href="https://medium.com/@pswoo/linux-newbie-running-manjaro-on-macbookpro-5db4672351c9?source=friends_link&amp;sk=390c7d8bbf698b4797d08f02139e5f22" rel="nofollow noreferrer" target="_blank">(Link)</a>.</p>
+<p>Note: This article is also published on Medium <a href="https://medium.com/@pswoo/linux-newbie-running-manjaro-on-macbookpro-5db4672351c9?source=friends_link&amp;sk=390c7d8bbf698b4797d08f02139e5f22">(Link)</a>.</p>
 
     </div>
 
@@ -362,6 +290,10 @@ polling_interval = 3
       
         
       
+        <a href="//news.ycombinator.com/submitlink?u=https%3a%2f%2fpswu11.github.io%2f2019%2fmanjaro-mbp%2f&amp;description=Linux%20Newbie%3a%20Running%20Manjaro%20on%20MacBookPro" target="_blank" title="Share on Hacker News">
+          <i class="iconfont icon-ycombinator"></i>
+        </a>
+        
         
       
 
@@ -408,12 +340,21 @@ polling_interval = 3
           
 
 
+    <script src="https://utteranc.es/client.js"
+            repo="pswu11/hugo.site.comment"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://github.com/utterance">comments powered by utterances.</a></noscript>
 
  
 
 
           
     </div>
+    
 </article>
           </div>
 		   </main>
