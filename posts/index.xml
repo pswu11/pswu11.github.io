@@ -6,10 +6,21 @@
     <description>Recent content in Posts on PEI-SHAN WU 珊珊 </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 04 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 05 Dec 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://pswu11.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Building a minimalist website with Hugo in a day</title>
+      <link>https://pswu11.github.io/2019/hugosite/</link>
+      <pubDate>Thu, 05 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://pswu11.github.io/2019/hugosite/</guid>
+      <description>How much time do you need to build a personal website with a blog module?
+I&#39;ve been having this idea in mind for several weeks - building my personal website. But having another full-time job, you get to plan your time well before you kick-off a side project. Otherwise you might feel like you would never see the end of it. That is my personal experience.
+Now, the question is how?</description>
+    </item>
     
     <item>
       <title>Linux Newbie: Running Manjaro on MacBookPro</title>
