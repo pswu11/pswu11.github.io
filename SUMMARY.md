@@ -1,4 +1,4 @@
 # Table of contents
 
-* [Initial page](README.md)
+* [Introduction to Hugo Personal Site](README.md)
 
