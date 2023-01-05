@@ -9,31 +9,30 @@
     <atom:link href="https://pswu11.github.io/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>About Me</title>
+      <link>https://pswu11.github.io/aboutme/</link>
+      <pubDate>Thu, 05 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://pswu11.github.io/aboutme/</guid>
+      <description>&lt;h4 id=&#34;root--about-me&#34;&gt;[root /]$ About Me:&lt;/h4&gt;
+&lt;p&gt;Hello there! This is Pei. My hometown is Taiwan and I moved to Germany in 2015.
+I used to work at QuestDB (time series database), Jina AI (neural search framework), and many other companies in different roles.&lt;/p&gt;
+&lt;h4 id=&#34;root--what-i-do&#34;&gt;[root /]$ What I do:&lt;/h4&gt;
+&lt;p&gt;Product management, product marketing, developer relations, and business development.
+In other words, problem solving, bridging cross-team communication and delivering user oriented results.&lt;/p&gt;
+&lt;h4 id=&#34;root--what-else-i-do&#34;&gt;[root /]$ What else I do:&lt;/h4&gt;
+&lt;p&gt;I&amp;rsquo;m passionate about technology, open-source software, and user-centric products.
+Besides my current occupation, I&amp;rsquo;m currently learning Python programming.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Posts</title>
       <link>https://pswu11.github.io/posts/</link>
       <pubDate>Thu, 05 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>https://pswu11.github.io/posts/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>About Me</title>
-      <link>https://pswu11.github.io/aboutme/</link>
-      <pubDate>Sun, 03 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://pswu11.github.io/aboutme/</guid>
-      <description>&lt;h4 id=&#34;root--about-me&#34;&gt;[root /]$ About Me:&lt;/h4&gt;
-&lt;p&gt;Hello there! I&#39;m Pei-Shan Wu. My hometown is Taiwan.&lt;/p&gt;
-&lt;p&gt;Devcon5 Scholar &amp;amp; Yahoo Alumna. Working experience in research institution (NGO) and startups.&lt;/p&gt;
-&lt;p&gt;In 2015, Germany became my second home. Currently I am working at a Germany based startup focused on providing sustainable &amp;amp; open-source based infrastructure solutions.&lt;/p&gt;
-&lt;h4 id=&#34;root--what-i-do&#34;&gt;[root /]$ What I do:&lt;/h4&gt;
-&lt;p&gt;Business development and project management interfacing with product marketing, product development, operations, and sales. In other words, problem solving, bridging cross-team communication and delivering customer oriented results.&lt;/p&gt;
-&lt;h4 id=&#34;root--what-else-i-do&#34;&gt;[root /]$ What else I do:&lt;/h4&gt;
-&lt;p&gt;I love technology and value diversity.&lt;/p&gt;
-&lt;p&gt;Besides my current occupation, I am learning about blockchain technology, programming, and exploring the world of product development.&lt;/p&gt;
-&lt;p&gt;I am excited about the opportunities to contribute to the ecosystem with my new set of skills and improving them as I go along.&lt;/p&gt;
-</description>
     </item>
     
   </channel>

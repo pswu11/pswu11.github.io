@@ -6,11 +6,7 @@
     <description>Recent content in Web on PEI-SHAN WU 珊珊 </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 Dec 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://pswu11.github.io/categories/web/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 05 Dec 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://pswu11.github.io/categories/web/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Building a Minimalist Website with Hugo in a Day</title>
       <link>https://pswu11.github.io/2019/hugosite/</link>
@@ -18,7 +14,7 @@
       
       <guid>https://pswu11.github.io/2019/hugosite/</guid>
       <description>How much time do you need to build a personal website with a blog module?
-I&#39;ve been having this idea in mind for several weeks - building my personal website. But having another full-time job, you get to plan your time well before you kick-off a side project. Otherwise you might feel like you would never see the end of it.
+I&amp;rsquo;ve been having this idea in mind for several weeks - building my personal website. But having another full-time job, you get to plan your time well before you kick-off a side project. Otherwise you might feel like you would never see the end of it.
 Now, the question is how? From completely drag &amp;amp; drop solutions to hand-craft the HTML pages line by line, you will have to pick a way.</description>
     </item>
     

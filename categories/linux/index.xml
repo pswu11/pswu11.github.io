@@ -6,18 +6,14 @@
     <description>Recent content in Linux on PEI-SHAN WU 珊珊 </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 04 Oct 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://pswu11.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 04 Oct 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://pswu11.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Linux Newbie: Running Manjaro on MacBookPro</title>
       <link>https://pswu11.github.io/2019/manjaro-mbp/</link>
       <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://pswu11.github.io/2019/manjaro-mbp/</guid>
-      <description>The article explains how to install and set up Manjaro KDE on your Apple MacBook Pro (Early 2015) Retina 13&amp;rdquo;. If you are a Linux newbie and want to try Manjaro too, this guide is for you!
+      <description>The article explains how to install and set up Manjaro KDE on your Apple MacBook Pro (Early 2015) Retina 13&amp;quot;. If you are a Linux newbie and want to try Manjaro too, this guide is for you!
 Installation First of all, it’s recommended to use the stable version from Manjaro. You can download the image file at its official website, and can create a bootable USB stick from that. If you never did this before, there is a step by step guide here on the website.</description>
     </item>
     
