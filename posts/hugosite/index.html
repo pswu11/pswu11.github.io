@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Liste - https://maverick.canhtran.me">
+    <title>Building a Minimalist Website with Hugo in a Day | PSWU</title>
+    <meta name="description" content="A minimal hugo theme focus on content">
+    <meta property="og:title" content="Building a Minimalist Website with Hugo in a Day" />
+<meta property="og:description" content="How much time do you need to build a personal website with a blog module?
+I&rsquo;ve been having this idea in mind for several weeks - building my personal website. But having another full-time job, you get to plan your time well before you kick-off a side project. Otherwise, you might feel like you would never see the end of it.
+So the question is how you want to do it?" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://maverick.canhtran.me/posts/hugosite/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2019-12-05T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-12-05T00:00:00+00:00" />
+
+    <meta itemprop="name" content="Building a Minimalist Website with Hugo in a Day">
+<meta itemprop="description" content="How much time do you need to build a personal website with a blog module?
+I&rsquo;ve been having this idea in mind for several weeks - building my personal website. But having another full-time job, you get to plan your time well before you kick-off a side project. Otherwise, you might feel like you would never see the end of it.
+So the question is how you want to do it?"><meta itemprop="datePublished" content="2019-12-05T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2019-12-05T00:00:00+00:00" />
+<meta itemprop="wordCount" content="851">
+<meta itemprop="keywords" content="web,hugo," />
+    
+    <link rel="canonical" href="https://maverick.canhtran.me/posts/hugosite/">
+    <link rel="icon" href="https://maverick.canhtran.me/assets/favicon.ico">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link href="https://www.google-analytics.com" rel="preconnect" crossorigin>
+    <link rel="alternate" type="application/atom+xml" title="PSWU" href="https://maverick.canhtran.me/atom.xml" />
+    <link rel="alternate" type="application/json" title="PSWU" href="https://maverick.canhtran.me/feed.json" />
+    <link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=">
+    
+    
+    <style>*,:after,:before{box-sizing:border-box;padding:0}body{font:1rem/1.5 '-apple-system',BlinkMacSystemFont,avenir next,avenir,helvetica,helvetica neue,ubuntu,roboto,noto,segoe ui,arial,sans-serif;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;padding:2rem;background:#f5f5f5;color:#000}.skip-link{position:absolute;top:-40px;left:0;background:#eee;z-index:100}.skip-link:focus{top:0}h1,h2,h3,h4,h5,strong,b{font-size:inherit;font-weight:600}header{line-height:2;padding-bottom:1.5rem}.link{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-decoration:none}.time{font-variant-numeric:tabular-nums;white-space:nowrap}blockquote{border-left:5px solid #eee;padding-left:1rem;margin:0}a,a:visited{color:inherit}a:hover,a.heading-link{text-decoration:none}pre{padding:.5rem;overflow:auto;overflow-x:scroll;overflow-wrap:normal}code,pre{font-family:San Francisco Mono,Monaco,consolas,lucida console,dejavu sans mono,bitstream vera sans mono,monospace;font-size:small;background:#eee}code{margin:.1rem;border:none}ul{list-style-type:square}ul,ol{padding-left:1.2rem}.list{line-height:2;list-style-type:none;padding-left:0}.list li{padding-bottom:.1rem}.meta{color:#777}.content{max-width:70ch;margin:0 auto}.footer{max-width:70ch;margin:0 auto}header{line-height:2;display:flex;justify-content:space-between;padding-bottom:1rem}header a{text-decoration:none}header ul{list-style-type:none;padding:0}header li,header a{display:inline}h2.post{padding-top:.5rem}header ul a:first-child{padding-left:1rem}.nav{height:1px;background:#000;content:'';max-width:10%}.list li{display:flex;align-items:baseline}.list li time{flex:initial}.hr-list{margin-top:0;margin-bottom:0;margin-right:.5rem;margin-left:.5rem;height:1px;border:0;border-bottom:1px dotted #ccc;flex:1 0 1rem}.m,hr{border:0;margin:3rem 0}img{max-width:100%;height:auto}.post-date{margin:5% 0}.index-date{color:#9a9a9a}.animate-blink{animation:opacity 1s infinite;opacity:1}@keyframes opacity{0%{opacity:1}50%{opacity:.5}100%{opacity:0}}.tags{display:flex;justify-content:space-between}.tags ul{padding:0;margin:0}.tags li{display:inline}.avatar{height:120px;width:120px;position:relative;margin:-10px 0 0 15px;float:right;border-radius:50%} </style>
+  
+    
+  
+  
+  <script type="application/ld+json">
+  {
+      "@context": "http://schema.org",
+      "@type": "BlogPosting",
+      "articleSection": "posts",
+      "name": "Building a Minimalist Website with Hugo in a Day",
+      "headline": "Building a Minimalist Website with Hugo in a Day",
+      "alternativeHeadline": "",
+      "description": "How much time do you need to build a personal website with a blog module?\nI\u0026rsquo;ve been having this idea in mind for several weeks - building my personal website. But having another full-time job, you get to plan your time well before you kick-off a side project. Otherwise, you might feel like you would never see the end of it.\nSo the question is how you want to do it?",
+      "inLanguage": "en-us",
+      "isFamilyFriendly": "true",
+      "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https:\/\/maverick.canhtran.me\/posts\/hugosite\/"
+      },
+      "author" : {
+          "@type": "Person",
+          "name": "Pei-Shan Wu"
+      },
+      "creator" : {
+          "@type": "Person",
+          "name": "Pei-Shan Wu"
+      },
+      "accountablePerson" : {
+          "@type": "Person",
+          "name": "Pei-Shan Wu"
+      },
+      "copyrightHolder" : "PSWU",
+      "copyrightYear" : "2019",
+      "dateCreated": "2019-12-05T00:00:00.00Z",
+      "datePublished": "2019-12-05T00:00:00.00Z",
+      "dateModified": "2019-12-05T00:00:00.00Z",
+      "publisher":{
+          "@type":"Organization",
+          "name": "PSWU",
+          "url": "https://maverick.canhtran.me",
+          "logo": {
+              "@type": "ImageObject",
+              "url": "https:\/\/maverick.canhtran.me\/assets\/favicon.ico",
+              "width":"32",
+              "height":"32"
+          }
+      },
+      "image": "https://maverick.canhtran.me/assets/favicon.ico",
+      "url" : "https:\/\/maverick.canhtran.me\/posts\/hugosite\/",
+      "wordCount" : "851",
+      "genre" : [ "web" , "hugo" ],
+      "keywords" : [ "web" , "hugo" ]
+  }
+  </script>
+  
+  
+  </head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main</a>
+  <main id="main">
+  <div class="content">
+    <header>
+<p style="padding: 0;margin: 0;">
+  <a href="/">
+    <b>PSWU</b>
+    <span class="text-stone-500 animate-blink">▮</span>
+  </a>
+</p>
+<ul style="padding: 0;margin: 0;">
+  
+  
+  <li class="">
+    <a href="/posts/"><span>Post</span></a>
+    
+  <li class="">
+    <a href="/about/"><span>About</span></a>
+    
+  </li>
+</ul>
+</header>
+<hr class="hr-list" style="padding: 0;margin: 0;">
+    <section>
+      <h2 class="post">Building a Minimalist Website with Hugo in a Day</h2>
+      <p><img
+  src="/images/hugosite1.png"
+  alt="Hugo"
+  loading="lazy"
+  decoding="async"
+  class="full-width"
+/>
+
+</p>
+<p>How much time do you need to build a personal website with a blog module?</p>
+<p>I&rsquo;ve been having this idea in mind for several weeks - building my personal website.
+But having another full-time job, you get to plan your time well before you kick-off a side project. Otherwise, you might feel like you would never see the end of it.</p>
+<p>So the question is how you want to do it? From completely drag &amp; drop solutions to hand-crafting the HTML pages line by line, you will have to pick a way.</p>
+<p>After some research, I concluded my expectation as below:</p>
+<ul>
+<li>No drag &amp; drop</li>
+<li>Publish &amp; host on GitHub Pages</li>
+<li>Blogging module</li>
+<li>From A to Z within a week</li>
+<li>Low technical entry barrier</li>
+<li>Further areas of development and customization</li>
+</ul>
+<p>Among so many available tools, I eventually decided for Hugo after checking its documentation. You literally don&rsquo;t need to &ldquo;program&rdquo; anything.</p>
+<h2 id="lets-get-to-the-point">Let&rsquo;s get to the point.</h2>
+<p>What do we need?</p>
+<ul>
+<li>A GitHub account</li>
+<li>Git installed and configured</li>
+<li>A little bit of Markdown experience: take fives minutes to read the instruction</li>
+<li>A little bit of command line knowledge: you know where your terminal is, and can copy&amp;paste</li>
+<li>Patience, love &amp; motivation :3</li>
+</ul>
+<h2 id="create-git-repositories">Create Git repositories.</h2>
+<p>In this introduction, we will be hosting our personal website using GitHub Pages.</p>
+<p>Overall, we will create two repositories under your GitHub account:</p>
+<p><strong>1. &lt;SITE_NAME&gt;</strong><br>
+<strong>2. &lt;GITHUB_USERNAME&gt;.github.io</strong></p>
+<p><img
+  src="/images/hugosite2.png"
+  alt="My repositories"
+  loading="lazy"
+  decoding="async"
+  class="full-width"
+/>
+
+</p>
+<p>The repository <strong>&lt;HUGO_SITE_NAME&gt;</strong> is used to save the original Hugo project, which is the place where you edit the articles, configure your pages, and tune your themes.</p>
+<p>And <strong>&lt;GITHUB_USERNAME&gt;.github.io</strong> is for the generated HTML content that will be rendered by Hugo. It will also be a submodule of the first repository in our setup.</p>
+<p>One important thing to notice here is that we need to create the second repository with this specific name above for hosting via Github Pages.</p>
+<h2 id="setup-hugo">Setup Hugo.</h2>
+<p>After you have installed Hugo successfully.
+Go to where you would like to put your Hugo project and generate a Hugo project:</p>
+<p><code>cd &lt;YOUR WISHED LOCATION/FOLDER&gt;</code></p>
+<p><code>hugo new site &lt;HUGO_SITE_NAME&gt;</code></p>
+<p>After you have create your Hugo project, Hugo will generate a structure which looks like below:</p>
+<p><img
+  src="/images/hugosite3.png"
+  alt="Hugo Structure"
+  loading="lazy"
+  decoding="async"
+  class="full-width"
+/>
+
+</p>
+<p>But for now, we will only work with below items:</p>
+<ul>
+<li>config.toml: the configuration file for your personal website</li>
+<li>themes: where you could use existing themes or customize your own here</li>
+<li>static: the default path for any images you want to put into your blog posts</li>
+<li>content: where your about me and blog pages are located</li>
+</ul>
+<h2 id="add-a-theme">Add a theme.</h2>
+<p>After the overall structure is created, now we need to pick a theme that suits your imagined site the most.</p>
+<p>Visit <a href="https://themes.gohugo.io/">Hugo Themes</a> and find one you like.</p>
+<p>In this tutorial, we use meme theme.</p>
+<p>Make sure you are in your project folder:</p>
+<p><code>git init</code></p>
+<p><code>git submodule add https://github.com/calintat/minimal.git themes/meme</code></p>
+<p><code>cp themes/meme/exampleSite/config.toml .</code></p>
+<p>Until now, we are almost done, but we need to do a bit of configuration.</p>
+<p>Open your <code>config.toml</code>, which is the one you just copied from the meme theme.</p>
+<p>Make sure below parts are modified correctly:</p>
+<pre tabindex="0"><code>…
+baseURL = &#34;https://&lt;GITHUB_USERNAME&gt;.github.io/&#34;
+…
+theme = &#34;meme&#34;
+…
+publishDir = &#34;&lt;GITHUB_USERNAME&gt;.github.io&#34;
+…
+</code></pre><p>Save it. Now we will host this website on your local machine and see if it runs smoothly as we imagine.</p>
+<p>Run this in the terminal:</p>
+<p><code>hugo server</code></p>
+<p><img
+  src="/images/hugosite4.png"
+  alt="Hosting on your machine"
+  loading="lazy"
+  decoding="async"
+  class="full-width"
+/>
+
+</p>
+<p>Now Hugo has generated your static website and make it available on your machine locally.</p>
+<p>Go check out <a href="http://localhost:1313/">http://localhost:1313/</a> in your browser, you should be able to see your personal website in the theme you picked earlier.</p>
+<p>Congratulations!</p>
+<h2 id="host-your-website-using-github-pages">Host your website using GitHub Pages.</h2>
+<p>So, &ldquo;yay&rdquo; you say, &ldquo;but what now?&rdquo;</p>
+<p>Now, we need to make sure it also works on GitHub Pages.</p>
+<p>If you remember we have created two repositories, it&rsquo;s time to connect to them.
+First, make sure you are still in the project folder.</p>
+<p><code>git init</code></p>
+<p><code>git remote add origin git@github.com:&lt;GITHUB_USERNAME&gt;/&lt;SITE_NAME&gt;.git</code></p>
+<p><code>git add .</code></p>
+<p><code>git commit -m &quot;first commit for my hugo website.&quot;</code></p>
+<p>Then we add submodule, which will be the folder for our generated HTML:</p>
+<p><code>git submodule add git@github.com:&lt;GITHUB_USERNAME&gt;/&lt;GITHUB_USERNAME&gt;.github.io.git</code></p>
+<p>Finally, we have added our origins to git repositories. And we need to rendered our static website and push it to our second GitHub repository.</p>
+<p><code>hugo</code></p>
+<p>This command will generate your website content to the submodule folder we just created:</p>
+<p><img
+  src="/images/hugosite5.png"
+  alt="Your site is generated"
+  loading="lazy"
+  decoding="async"
+  class="full-width"
+/>
+
+</p>
+<p>Now we move to the submodule folder with the name of <strong>&lt;GITHUB_USERNAME&gt;.github.io</strong>.</p>
+<p><code>cd &lt;GITHUB_USERNAME&gt;.github.io</code></p>
+<p><code>git add .</code></p>
+<p><code>git commit -m &quot;first commit for my generated HTML content.&quot;</code></p>
+<p><code>git push origin master</code></p>
+<p>Your website is now available at https://&lt;GITHUB_USERNAME&gt;.github.io this address.</p>
+<p>Check it out in your browser!</p>
+<p>Mine looks like this: <a href="https://pswu11.github.io/">pswu11.github.io</a></p>
+<h2 id="final-step-customization-andcontent">Final step: customization and content.</h2>
+<p>Wait, it&rsquo;s still not finished.</p>
+<p>We need to make this website look like YOUR personal website.</p>
+<p>What should you do?</p>
+<ul>
+<li>Go trough config.toml and configure your website the way you want</li>
+<li>Create content such as About Me or blog posts using Markdown format (.md)</li>
+</ul>
+<p>After that, repeat the steps to push your changes to GitHub repositories, for your Hugo project as well as for your submodule.</p>
+<p>Feel free to leave your comments if you have any questions!</p>
+<p><strong>Note:</strong> This article is also published on Medium <a href="https://medium.com/@pswoo/building-a-minimalist-website-with-hugo-in-a-day-ac19df8ecc52">(Link)</a>.</p>
+
+      
+      <div class="post-date">
+        <span class="g time">December 5, 2019 </span> &#8729;
+         
+         <a href="https://maverick.canhtran.me/tags/web/">web</a> <a href="https://maverick.canhtran.me/tags/hugo/">hugo</a>
+      </div>
+      
+    </section>
+    
+    <div id="comments">
+      <script src="https://utteranc.es/client.js"
+    repo=canhtran/maverick
+    issue-term="pathname"
+    theme=github-light
+    crossorigin="anonymous"
+    async>
+</script>
+
+    </div>
+    
+  </div>
+</main>
+</body>
+</html>

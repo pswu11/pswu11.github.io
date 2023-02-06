@@ -1,0 +1,463 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    
+    <title>PSWU</title>
+    <description>A minimal hugo theme focus on content</description>
+    <link>https://maverick.canhtran.me</link>
+    
+    <language>en</language>
+    <copyright>Copyright 2023, Calvin Tran</copyright>
+    <lastBuildDate>Thu, 05 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo - gohugo.io</generator>
+    <docs>http://cyber.harvard.edu/rss/rss.html</docs>
+    <atom:link href="https://maverick.canhtran.me/atom.xml" rel="self" type="application/atom+xml"/>
+    
+    
+    <item>
+      <title>Building a Minimalist Website with Hugo in a Day</title>
+      <link>https://maverick.canhtran.me/posts/hugosite/</link>
+      <description>&lt;p&gt;&lt;img
+  src=&#34;https://maverick.canhtran.me/images/hugosite1.png&#34;
+  alt=&#34;Hugo&#34;
+  loading=&#34;lazy&#34;
+  decoding=&#34;async&#34;
+  class=&#34;full-width&#34;
+/&gt;
+
+&lt;/p&gt;
+&lt;p&gt;How much time do you need to build a personal website with a blog module?&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve been having this idea in mind for several weeks - building my personal website.
+But having another full-time job, you get to plan your time well before you kick-off a side project. Otherwise, you might feel like you would never see the end of it.&lt;/p&gt;
+&lt;p&gt;So the question is how you want to do it? From completely drag &amp;amp; drop solutions to hand-crafting the HTML pages line by line, you will have to pick a way.&lt;/p&gt;
+&lt;p&gt;After some research, I concluded my expectation as below:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;No drag &amp;amp; drop&lt;/li&gt;
+&lt;li&gt;Publish &amp;amp; host on GitHub Pages&lt;/li&gt;
+&lt;li&gt;Blogging module&lt;/li&gt;
+&lt;li&gt;From A to Z within a week&lt;/li&gt;
+&lt;li&gt;Low technical entry barrier&lt;/li&gt;
+&lt;li&gt;Further areas of development and customization&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Among so many available tools, I eventually decided for Hugo after checking its documentation. You literally don&amp;rsquo;t need to &amp;ldquo;program&amp;rdquo; anything.&lt;/p&gt;
+&lt;h2 id=&#34;lets-get-to-the-point&#34;&gt;Let&amp;rsquo;s get to the point.&lt;/h2&gt;
+&lt;p&gt;What do we need?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A GitHub account&lt;/li&gt;
+&lt;li&gt;Git installed and configured&lt;/li&gt;
+&lt;li&gt;A little bit of Markdown experience: take fives minutes to read the instruction&lt;/li&gt;
+&lt;li&gt;A little bit of command line knowledge: you know where your terminal is, and can copy&amp;amp;paste&lt;/li&gt;
+&lt;li&gt;Patience, love &amp;amp; motivation :3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;create-git-repositories&#34;&gt;Create Git repositories.&lt;/h2&gt;
+&lt;p&gt;In this introduction, we will be hosting our personal website using GitHub Pages.&lt;/p&gt;
+&lt;p&gt;Overall, we will create two repositories under your GitHub account:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1. &amp;lt;SITE_NAME&amp;gt;&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;2. &amp;lt;GITHUB_USERNAME&amp;gt;.github.io&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img
+  src=&#34;https://maverick.canhtran.me/images/hugosite2.png&#34;
+  alt=&#34;My repositories&#34;
+  loading=&#34;lazy&#34;
+  decoding=&#34;async&#34;
+  class=&#34;full-width&#34;
+/&gt;
+
+&lt;/p&gt;
+&lt;p&gt;The repository &lt;strong&gt;&amp;lt;HUGO_SITE_NAME&amp;gt;&lt;/strong&gt; is used to save the original Hugo project, which is the place where you edit the articles, configure your pages, and tune your themes.&lt;/p&gt;
+&lt;p&gt;And &lt;strong&gt;&amp;lt;GITHUB_USERNAME&amp;gt;.github.io&lt;/strong&gt; is for the generated HTML content that will be rendered by Hugo. It will also be a submodule of the first repository in our setup.&lt;/p&gt;
+&lt;p&gt;One important thing to notice here is that we need to create the second repository with this specific name above for hosting via Github Pages.&lt;/p&gt;
+&lt;h2 id=&#34;setup-hugo&#34;&gt;Setup Hugo.&lt;/h2&gt;
+&lt;p&gt;After you have installed Hugo successfully.
+Go to where you would like to put your Hugo project and generate a Hugo project:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;cd &amp;lt;YOUR WISHED LOCATION/FOLDER&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;hugo new site &amp;lt;HUGO_SITE_NAME&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;After you have create your Hugo project, Hugo will generate a structure which looks like below:&lt;/p&gt;
+&lt;p&gt;&lt;img
+  src=&#34;https://maverick.canhtran.me/images/hugosite3.png&#34;
+  alt=&#34;Hugo Structure&#34;
+  loading=&#34;lazy&#34;
+  decoding=&#34;async&#34;
+  class=&#34;full-width&#34;
+/&gt;
+
+&lt;/p&gt;
+&lt;p&gt;But for now, we will only work with below items:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;config.toml: the configuration file for your personal website&lt;/li&gt;
+&lt;li&gt;themes: where you could use existing themes or customize your own here&lt;/li&gt;
+&lt;li&gt;static: the default path for any images you want to put into your blog posts&lt;/li&gt;
+&lt;li&gt;content: where your about me and blog pages are located&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;add-a-theme&#34;&gt;Add a theme.&lt;/h2&gt;
+&lt;p&gt;After the overall structure is created, now we need to pick a theme that suits your imagined site the most.&lt;/p&gt;
+&lt;p&gt;Visit &lt;a href=&#34;https://themes.gohugo.io/&#34;&gt;Hugo Themes&lt;/a&gt; and find one you like.&lt;/p&gt;
+&lt;p&gt;In this tutorial, we use meme theme.&lt;/p&gt;
+&lt;p&gt;Make sure you are in your project folder:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git init&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git submodule add https://github.com/calintat/minimal.git themes/meme&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;cp themes/meme/exampleSite/config.toml .&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Until now, we are almost done, but we need to do a bit of configuration.&lt;/p&gt;
+&lt;p&gt;Open your &lt;code&gt;config.toml&lt;/code&gt;, which is the one you just copied from the meme theme.&lt;/p&gt;
+&lt;p&gt;Make sure below parts are modified correctly:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;…
+baseURL = &amp;#34;https://&amp;lt;GITHUB_USERNAME&amp;gt;.github.io/&amp;#34;
+…
+theme = &amp;#34;meme&amp;#34;
+…
+publishDir = &amp;#34;&amp;lt;GITHUB_USERNAME&amp;gt;.github.io&amp;#34;
+…
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Save it. Now we will host this website on your local machine and see if it runs smoothly as we imagine.&lt;/p&gt;
+&lt;p&gt;Run this in the terminal:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;hugo server&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img
+  src=&#34;https://maverick.canhtran.me/images/hugosite4.png&#34;
+  alt=&#34;Hosting on your machine&#34;
+  loading=&#34;lazy&#34;
+  decoding=&#34;async&#34;
+  class=&#34;full-width&#34;
+/&gt;
+
+&lt;/p&gt;
+&lt;p&gt;Now Hugo has generated your static website and make it available on your machine locally.&lt;/p&gt;
+&lt;p&gt;Go check out &lt;a href=&#34;http://localhost:1313/&#34;&gt;http://localhost:1313/&lt;/a&gt; in your browser, you should be able to see your personal website in the theme you picked earlier.&lt;/p&gt;
+&lt;p&gt;Congratulations!&lt;/p&gt;
+&lt;h2 id=&#34;host-your-website-using-github-pages&#34;&gt;Host your website using GitHub Pages.&lt;/h2&gt;
+&lt;p&gt;So, &amp;ldquo;yay&amp;rdquo; you say, &amp;ldquo;but what now?&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;Now, we need to make sure it also works on GitHub Pages.&lt;/p&gt;
+&lt;p&gt;If you remember we have created two repositories, it&amp;rsquo;s time to connect to them.
+First, make sure you are still in the project folder.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git init&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git remote add origin git@github.com:&amp;lt;GITHUB_USERNAME&amp;gt;/&amp;lt;SITE_NAME&amp;gt;.git&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git add .&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git commit -m &amp;quot;first commit for my hugo website.&amp;quot;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Then we add submodule, which will be the folder for our generated HTML:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git submodule add git@github.com:&amp;lt;GITHUB_USERNAME&amp;gt;/&amp;lt;GITHUB_USERNAME&amp;gt;.github.io.git&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Finally, we have added our origins to git repositories. And we need to rendered our static website and push it to our second GitHub repository.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;hugo&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;This command will generate your website content to the submodule folder we just created:&lt;/p&gt;
+&lt;p&gt;&lt;img
+  src=&#34;https://maverick.canhtran.me/images/hugosite5.png&#34;
+  alt=&#34;Your site is generated&#34;
+  loading=&#34;lazy&#34;
+  decoding=&#34;async&#34;
+  class=&#34;full-width&#34;
+/&gt;
+
+&lt;/p&gt;
+&lt;p&gt;Now we move to the submodule folder with the name of &lt;strong&gt;&amp;lt;GITHUB_USERNAME&amp;gt;.github.io&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;cd &amp;lt;GITHUB_USERNAME&amp;gt;.github.io&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git add .&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git commit -m &amp;quot;first commit for my generated HTML content.&amp;quot;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git push origin master&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Your website is now available at https://&amp;lt;GITHUB_USERNAME&amp;gt;.github.io this address.&lt;/p&gt;
+&lt;p&gt;Check it out in your browser!&lt;/p&gt;
+&lt;p&gt;Mine looks like this: &lt;a href=&#34;https://pswu11.github.io/&#34;&gt;pswu11.github.io&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;final-step-customization-andcontent&#34;&gt;Final step: customization and content.&lt;/h2&gt;
+&lt;p&gt;Wait, it&amp;rsquo;s still not finished.&lt;/p&gt;
+&lt;p&gt;We need to make this website look like YOUR personal website.&lt;/p&gt;
+&lt;p&gt;What should you do?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Go trough config.toml and configure your website the way you want&lt;/li&gt;
+&lt;li&gt;Create content such as About Me or blog posts using Markdown format (.md)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;After that, repeat the steps to push your changes to GitHub repositories, for your Hugo project as well as for your submodule.&lt;/p&gt;
+&lt;p&gt;Feel free to leave your comments if you have any questions!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; This article is also published on Medium &lt;a href=&#34;https://medium.com/@pswoo/building-a-minimalist-website-with-hugo-in-a-day-ac19df8ecc52&#34;&gt;(Link)&lt;/a&gt;.&lt;/p&gt;
+</description>
+      <author>Calvin Tran</author>
+      <guid>https://maverick.canhtran.me/posts/hugosite/</guid>
+      <pubDate>Thu, 05 Dec 2019 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
+      <title>Linux Newbie: Running Manjaro on MacBookPro</title>
+      <link>https://maverick.canhtran.me/posts/manjaro-mbp/</link>
+      <description>&lt;p&gt;&lt;em&gt;The article explains how to install and set up Manjaro KDE on your Apple MacBook Pro (Early 2015) Retina 13&amp;quot;. If you are a Linux newbie and want to try Manjaro too, this guide is for you!&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img
+  src=&#34;https://maverick.canhtran.me/images/manjaro1.jpeg&#34;
+  alt=&#34;my first manjaro desktop&#34;
+  loading=&#34;lazy&#34;
+  decoding=&#34;async&#34;
+  class=&#34;full-width&#34;
+/&gt;
+
+&lt;/p&gt;
+&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
+&lt;p&gt;First of all, it’s recommended to use the &lt;strong&gt;stable version&lt;/strong&gt; from Manjaro. You can download the image file at its official website, and can create a bootable USB stick from that. If you never did this before, there is a step by step guide &lt;a href=&#34;https://manjaro.org/support/firststeps/#making-a-live-system&#34;&gt;here&lt;/a&gt; on the website. It is pretty understandable.&lt;/p&gt;
+&lt;p&gt;After you create the bootable USB and connect it to your laptop, restart your computer. For MacBook user, please long press the key option after reboot and choose to boot from the USB stick.&lt;/p&gt;
+&lt;p&gt;Now, you will be able to have a first impression of your future OS.&lt;/p&gt;
+&lt;p&gt;The whole installation process is pretty easy and smooth if you follow the installation guide.&lt;/p&gt;
+&lt;h2 id=&#34;basic-setup&#34;&gt;Basic Setup&lt;/h2&gt;
+&lt;p&gt;So now you have an out-of-the-box desktop environment. But there are some basic adjustments you have to do before you start to customise other parts.&lt;/p&gt;
+&lt;h3 id=&#34;update-your-system-to-the-latest-version&#34;&gt;Update your system to the latest version.&lt;/h3&gt;
+&lt;p&gt;The Manjaro distro is based on Arch Linux.&lt;/p&gt;
+&lt;p&gt;For Arch Linux based distros, pacman is the package manager that is used for installing, updating, removing your packages.&lt;/p&gt;
+&lt;p&gt;So, open the terminal and run this to update your system.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;sudo pacman -Syyu&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Then we are good to go to our next steps.&lt;/p&gt;
+&lt;h3 id=&#34;allow-aur-as-packages-source&#34;&gt;Allow AUR as packages source.&lt;/h3&gt;
+&lt;p&gt;There are several repositories for Arch based Linux users when you want to install new applications (or let’s say packages). As mentioned, pacman is usually used for installing packages that are offered by Manjaro maintenance team, the community. However, there are several common applications for which you will need to install from &lt;a href=&#34;https://wiki.archlinux.org/index.php/Arch_User_Repository&#34;&gt;AUR (Arch User Repository)&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;First, please install pamac, another GUI for the existing package manager. The original one is Octopi.&lt;/p&gt;
+&lt;p&gt;Through pamac you can enable AUR as package repository.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;sudo pacman -S pamac&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Run pamac. Search for the application with name Add/Remove Software, and you will find it.&lt;/p&gt;
+&lt;p&gt;&lt;img
+  src=&#34;https://maverick.canhtran.me/images/manjaro2.png&#34;
+  alt=&#34;pacmac manager&#34;
+  loading=&#34;lazy&#34;
+  decoding=&#34;async&#34;
+  class=&#34;full-width&#34;
+/&gt;
+
+&lt;/p&gt;
+&lt;p&gt;Go to &lt;em&gt;Settings (the buttom at upper right) &amp;gt; Preferences &amp;gt; AUR&lt;/em&gt;. Here you can enable AUR support and check the box for getting updates from AUR.&lt;/p&gt;
+&lt;p&gt;Later we will need to install some packages from AUR through pamac.&lt;/p&gt;
+&lt;h3 id=&#34;install-and-configure-the-mbp-fan-driver&#34;&gt;Install and configure the MBP fan driver.&lt;/h3&gt;
+&lt;p&gt;You probably notice that the fan is not working probably. Here is how we can make the fan work on your MacBook Pro again.&lt;/p&gt;
+&lt;p&gt;First, there are some modules to be created for the fan speed and the temperature sensors:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;sudo nano /etc/modules&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Insert these two lines to add the modules.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;coretemp&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;applesmc&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Save it.&lt;/p&gt;
+&lt;p&gt;Then we need to install mbpfan-git through our pamac.&lt;/p&gt;
+&lt;p&gt;After that, make the sensors detectable.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;sudo sensors-detect&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Start the fan.&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;sudo systemctl enable mbpfan&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;sudo systemctl start mbpfan&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;It is recommended to also configure the fan speed etc. with your own working preference.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;sudo nano /etc/mbpfan.conf&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;My configuration file looks like this:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;min_fan1_speed = 1300
+max_fan1_speed = 6100
+low_temp = 60        
+high_temp = 64       
+max_temp = 80        
+polling_interval = 3 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;However, you could also refer to a more detailed tutorial here at &lt;a href=&#34;https://ineed.coffee/3838/a-beginners-tutorial-for-mbpfan-under-ubuntu/&#34;&gt;ineed.coffee&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;adjusting-the-display-and-scaling-factors&#34;&gt;Adjusting the display and scaling factors.&lt;/h3&gt;
+&lt;p&gt;If you have a MacBook Pro Retina or other laptops with high resolution display, you probably notice that all the texts and icons are extremely small. In this case it’s recommended to change the scaling factor here (for Manjaro KDE):&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;System Settings &amp;gt; Display and Monitor &amp;gt; Displays &amp;gt; Scale Display&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Take my own setting as an example — my display resolution is 2560x1440, and with that I use 1.4 as the scaling factor.&lt;/p&gt;
+&lt;h3 id=&#34;fixing-the-suspend-issue&#34;&gt;Fixing the suspend issue.&lt;/h3&gt;
+&lt;p&gt;When I first time installed Manjaro, I noticed that sometimes the laptop woke up while the lid was closed. Later on, I realized it is one of the common issues when running Linux on MacBooks — the suspend doesn’t work properly.&lt;/p&gt;
+&lt;p&gt;I found a solution in &lt;a href=&#34;https://medium.com/@philpl/arch-linux-running-on-my-macbook-2ea525ebefe3&#34;&gt;Phil Plückthun’s article&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Open the terminal and type this:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;sudo nano /etc/systemd/logind.conf&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Then, add these two lines below in the configuration and save it.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;HandlePowerKey=suspend &lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;HandleLidSwitch=suspend&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;make-your-front-camera-work-optional&#34;&gt;Make your front camera work (optional).&lt;/h3&gt;
+&lt;p&gt;You will have to install a specific driver in order to use the front camera on your MacBook Pro. The package name is called facetimehd.&lt;/p&gt;
+&lt;p&gt;The gitpage page can be found &lt;a href=&#34;https://github.com/patjak/bcwc_pcie/wiki/Get-Started&#34;&gt;here&lt;/a&gt; and there is an intruction.&lt;/p&gt;
+&lt;p&gt;I ecountered some problems here, so make sure you also check the additional notes in the instruction. That could help.&lt;/p&gt;
+&lt;h2 id=&#34;now-its-almost-done&#34;&gt;Now it’s almost done.&lt;/h2&gt;
+&lt;h3 id=&#34;do-customization&#34;&gt;Do customization.&lt;/h3&gt;
+&lt;p&gt;Now it’s time to customize your desktop the way you want!&lt;/p&gt;
+&lt;p&gt;&lt;img
+  src=&#34;https://maverick.canhtran.me/images/manjaro3.png&#34;
+  alt=&#34;my another linux desktop&#34;
+  loading=&#34;lazy&#34;
+  decoding=&#34;async&#34;
+  class=&#34;full-width&#34;
+/&gt;
+
+&lt;/p&gt;
+&lt;h3 id=&#34;get-your-favourite-applications&#34;&gt;Get your favourite applications.&lt;/h3&gt;
+&lt;p&gt;Linux newbie or not, as mentioned before, there are several sources of packages. When you are not sure where to find your favourite applications, you can search keywords at &lt;a href=&#34;https://wiki.archlinux.org/&#34;&gt;ArchWiki&lt;/a&gt;. There you will usually find possible choices to get the exact application you want, or alternatives.&lt;/p&gt;
+&lt;p&gt;Also, if you encounter any problems while configurating your new desktop, you could join Manjaro telegram group or look for solutions at Manjaro’s offical &lt;a href=&#34;https://forum.manjaro.org/&#34;&gt;forum&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This is my first time installing and configuring Linux. Through this article, I record my journey of learning about Manjaro.&lt;/p&gt;
+&lt;p&gt;I am glad that I can share my takeaways with people who are also new but interested in trying out!&lt;/p&gt;
+&lt;h2 id=&#34;i-hope-you-enjoy-using-your-new-manjaro-kde&#34;&gt;I hope you enjoy using your new Manjaro KDE!&lt;/h2&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; This article is also published on Medium &lt;a href=&#34;https://medium.com/@pswoo/linux-newbie-running-manjaro-on-macbookpro-5db4672351c9?source=friends_link&amp;amp;sk=390c7d8bbf698b4797d08f02139e5f22&#34;&gt;(Link)&lt;/a&gt;&lt;/p&gt;
+</description>
+      <author>Calvin Tran</author>
+      <guid>https://maverick.canhtran.me/posts/manjaro-mbp/</guid>
+      <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
+      <title>Ethereum乙太坊開發者大會Devcon5 獎學金計畫</title>
+      <link>https://maverick.canhtran.me/posts/devconscholar-mandarin/</link>
+      <description>&lt;p&gt;&lt;em&gt;我之前從沒參加過開發者大會，所以這篇文章不會著墨太多在開發者大會的內容，而是想簡單介紹Ethereum開發者大會所提供的獎學金計畫（Scholars Program）。&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;a href=&#34;https://pswu11.github.io/2019/devconscholarship/&#34;&gt;英文版本：Devcon5 Scholars Program — The Beginning&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;是的我要去參加devcon5了&#34;&gt;是的，我要去參加Devcon5了！&lt;/h2&gt;
+&lt;p&gt;身為一個重度網路使用者，每天早上還沒清醒就是在床上滑個五分鐘的手機，看看天氣，看看郵件訊息。那天早上起床，看到一封新的郵件，開頭是[Devcon 5]，腦袋頓時清醒：&lt;/p&gt;
+&lt;p&gt;&lt;img
+  src=&#34;https://maverick.canhtran.me/images/devconscholar3.png&#34;
+  alt=&#34;devcon scholar email&#34;
+  loading=&#34;lazy&#34;
+  decoding=&#34;async&#34;
+  class=&#34;full-width&#34;
+/&gt;
+
+&lt;/p&gt;
+&lt;p&gt;阿～我拿到參加開發者大會的全額獎學金了，這個消息讓我整整興奮了兩個星期。&lt;/p&gt;
+&lt;h2 id=&#34;這是什麼&#34;&gt;這是什麼？&lt;/h2&gt;
+&lt;p&gt;乙太坊開發者大會獎學金計畫是由乙太坊基金會所提供的。主要的宗旨是提昇區塊鏈生態圈的多元代表性。
+這個獎學金計畫的對象是在學學生或是那些屬於在區塊鏈技術圈中比較弱勢的團體（under-represented group）的人，希望提供這些人親身體驗區塊鏈技術以及參與乙太坊開發者大會的機會。&lt;/p&gt;
+&lt;h2 id=&#34;為什麼我要去參加&#34;&gt;為什麼我要去參加？&lt;/h2&gt;
+&lt;p&gt;相信熟悉區塊鏈領域的人都聽過乙太坊（Ethereum），大概也知道乙太坊基金會（Ethereum Foundation）每年都會舉辦所謂的開發者大會。今年十月將在日本大阪舉辦第五次開發者大會（Devcon5），預計也將吸引眾多區塊鏈生態圈的人前往參加。
+2016年春天，是我到德國念碩士的第二個學期。在那時候有個和德國Postbank合作的科技創新專案，我們發表了一個以區塊鏈技術為主的提案（Postbank ID）。&lt;/p&gt;
+&lt;p&gt;那是我第一次接觸區塊鏈相關的知識，但由於我沒有技術背景，所以當時沒有辦法理解的很透徹。&lt;/p&gt;
+&lt;p&gt;2018年在德國開始工作之後，由於在新創科技公司擔任業務開發，加上認識了真正在區塊鏈圈工作的朋友，我才比較深入的認識各種區塊鏈的應用。在這個過程中，我似乎也開始能理解為什麼有這麼多人願意投入他們的時間、精力、與熱情在區塊鏈技術的開發上。&lt;/p&gt;
+&lt;p&gt;其實早在今年五月的時候，就聽朋友提起乙太坊的開發者大會。我以前一直以為這種開發者大會就是專門給軟體開發者參加，像我這種麻瓜是沒機會的。&lt;/p&gt;
+&lt;p&gt;可是看了幾篇介紹Devcon3、Devcon4的文章之後，我那先入為主的想法被改變了。&lt;/p&gt;
+&lt;p&gt;事實上，在Devcon的官方網站上是這麼描述開發者大會的：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Devcon is the Ethereum conference for developers, researchers, thinkers, and makers.&amp;quot;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;即使我並非軟體開發人員，但我對於區塊鏈技術的熱情並不亞於在這個社群裡的其他人，為何我不該去參加呢？&lt;/p&gt;
+&lt;h2 id=&#34;意外得的禮物&#34;&gt;意外得的「禮物」&lt;/h2&gt;
+&lt;p&gt;當然，我雖然十分想要去Devcon，但由於票價十分昂貴，加上往返的機票與住宿，所以我今年本來並沒有參加的計畫。
+一直到六月底的時候，我在推特上看到了這個訊息：&lt;/p&gt;
+&lt;p&gt;&lt;img
+  src=&#34;https://maverick.canhtran.me/images/devconscholar2.png&#34;
+  alt=&#34;twitter-screenshot&#34;
+  loading=&#34;lazy&#34;
+  decoding=&#34;async&#34;
+  class=&#34;full-width&#34;
+/&gt;
+
+&lt;/p&gt;
+&lt;p&gt;後來的故事你們也就知道了，我因此拿到了這個進入開發者大會的門票，但這只是一個開始。
+事實上，也是很多的開始。
+例如在這之前，我考慮過了很多能當我第一篇文章的各種主題，但我可沒有預料到，我發表的第一篇文章會是這篇：
+&lt;a href=&#34;https://medium.com/ethereum-foundation-devcon-scholars/ethereum-devcon5-scholars-program-i-am-accepted-a22c475a092a&#34;&gt;Devcon5 Scholars Program - The Beginning&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;我想我還會繼續寫的，不管是關於Devcon5，還是關於其他。&lt;/p&gt;
+&lt;p&gt;其實非常的開心 — 因為在十月的開發者大會，我將會遇到很多來自世界各地的熱血人們。
+如果你也打算要參加Devcon5且想要聊聊的話，非常歡迎與我聯繫相見！❤️&lt;/p&gt;
+&lt;p&gt;本篇文章也同時發表在Ｍedium上：&lt;a href=&#34;https://medium.com/ethereum-foundation-devcon-scholars/ethereum%E4%B9%99%E5%A4%AA%E5%9D%8A%E9%96%8B%E7%99%BC%E8%80%85%E5%A4%A7%E6%9C%83devcon5-%E7%8D%8E%E5%AD%B8%E9%87%91%E8%A8%88%E7%95%AB-1-3824bec3e606?source=friends_link&amp;amp;sk=2a27b521c934b4e1a0185cc18d46738e&#34;&gt;文章連結&lt;/a&gt;&lt;/p&gt;
+</description>
+      <author>Calvin Tran</author>
+      <guid>https://maverick.canhtran.me/posts/devconscholar-mandarin/</guid>
+      <pubDate>Thu, 01 Aug 2019 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
+      <title>比特幣白皮書 Bitcoin White Paper — 這到底是什麼啦？</title>
+      <link>https://maverick.canhtran.me/posts/bitcoinwhitepaper/</link>
+      <description>&lt;p&gt;&lt;em&gt;其實網路上關於比特幣和區塊鍊的文章已經很多，然而我寫此文章的目的是希望讓非資訊技術背景的麻瓜們也能理解「比特幣白皮書」的概括重點內容並能引起興趣。文章中關於比特幣的內容僅根據「比特幣白皮書」所描述，並且盡量不使用複雜的專有名詞，而以簡單易懂的敘述方式取代之，如有任何建議還請不吝指教。&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;背景介紹&#34;&gt;背景介紹&lt;/h2&gt;
+&lt;p&gt;2008年，中本聰（Satoshi Nakamoto）在網路上發表了一篇名為「比特幣：一種點對點的電子現金交易系統」的論文，英文原文為 Bitcoin: A Peer-to-Peer Electronic Cash System，現在也被稱為「比特幣白皮書」。
+其實中本聰到底是誰？雖然網路上有諸多猜測，但目前並沒有一個確切的說法。
+在中本聰的論文中，他提出了一種可以實現點對點（P2P, peer-to-peer）交易的電子現金交易系統「比特幣」（Bitcoin）。換句話說，這是一種不需要第三方金融機構作為中間人的交易系統。
+比特幣白皮書中所提到的實現比特幣這個交易系統的技術，則是現在大家所知的區塊鍊技術。&lt;/p&gt;
+&lt;h2 id=&#34;為什麼我們需要比特幣&#34;&gt;為什麼我們需要比特幣？&lt;/h2&gt;
+&lt;p&gt;在傳統的金融交易體系中，進行交易時我們都需要可信任的銀行作為第三方金融機構，以防止金融詐騙。同樣的狀況也適用於現今的電子貨幣，由於受款人無法有效驗證付款人是否重複支付這個電子貨幣，為了避免這種雙重支付（double spending problem）的問題，我們即需要一個中介機構來擔任可信任的中間人。
+這樣的運行模式，也被稱為是一種以信任為基礎的交易模式（trust-based model）。
+然而，這種依賴第三方機構的交易方式，往往需要使用者支付中間人手續費用。在此情況下，任何金額微小的交易都將因為提高的交易成本而受到限制。實際上，即使有可信任的中間人，也很難完全杜絕重複付款這類的金融詐騙。
+比特幣即是中本聰所提出的解決方案。&lt;/p&gt;
+&lt;h2 id=&#34;比特幣基本特性&#34;&gt;比特幣基本特性&lt;/h2&gt;
+&lt;p&gt;根據白皮書，比特幣有以下的基本特性：
+比特幣是加密數位貨幣：使用雜湊演算法（hash）和默克爾樹（merkle tree）方式加密
+可短時間內實現點對點（P2P）交易：不須透過銀行作為中間人來驗證交易&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;去中心化控制：使用分散式伺服器來確保交易系統難以被攻擊者掌控&lt;/li&gt;
+&lt;li&gt;低廉的交易成本：無中介機構處理費，實現大量小額交易&lt;/li&gt;
+&lt;li&gt;交易的不可逆性：惡意攻擊者很難竄改或是偽造貨幣紀錄&lt;/li&gt;
+&lt;li&gt;隱私保護：比特幣的結構設計能讓擁有或是交易貨幣的人保持匿名&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;比特幣交易系統機制&#34;&gt;比特幣交易系統機制&lt;/h3&gt;
+&lt;h4 id=&#34;一公開的交易內容&#34;&gt;（一）公開的交易內容&lt;/h4&gt;
+&lt;p&gt;數位交易中，唯一能避免同一個貨幣被雙重支付的方法是需要一次檢查所有的交易，以次判定哪一個交易是最早發生的。
+在比特幣的點對點交易當中，因為沒有了可信的第三方機構來驗證，需要其他的機制來避免重複付款以保障收款人。在比特幣的交易機制中，每一筆交易都會被公開宣告（publicly announced），以此來判定交易的時間順序。
+當然，若是需要判定時間，交易資訊上必須要有可信的時間戳記。可是，如何能保證這個時間戳記不被竄改呢？
+在比特幣的資料結構下，多筆交易（item）會形成一個區塊（block）。首先區塊會被雜湊演算法（hash，又譯為哈西）加密處理，然後時間戳記伺服器（timestamp server）會在此雜湊（hash）中加上時間戳記並將他公開廣播到網路上。
+重要的是，每一個時間戳記都包含了上一個時間戳記在這個區塊的雜湊中，因此形成了一條鍊的結構。這樣的結構下，每當有新的區塊包含時間戳記加入時，都加強（reinforce）了之前的區塊使他們難以被竄改（tampering）。&lt;/p&gt;
+&lt;p&gt;&lt;img
+  src=&#34;https://maverick.canhtran.me/images/bitcoin.png&#34;
+  alt=&#34;&#34;
+  loading=&#34;lazy&#34;
+  decoding=&#34;async&#34;
+  class=&#34;full-width&#34;
+/&gt;
+
+
+區塊的以鍊的形式呈現（參考來源：比特幣白皮書）&lt;/p&gt;
+&lt;h4 id=&#34;二分散式伺服器網路&#34;&gt;（二）分散式伺服器網路&lt;/h4&gt;
+&lt;p&gt;比特幣是由一個由分散式伺服器組成的網路（network）運作的，在此我們稱每一個運作單位為節點（node）。
+當新的交易產生的時候，會被廣播（broadcast）到所有其他的節點上，而每個節點會將這些新產生所生的區塊上，並使用它的運算能力將新的區塊加入到既有的鍊上。
+每個節點上都會有同樣的這一條鍊，當新的區塊被加入鍊時，會廣播到其他的節點上。然而當任何一個節點接受到兩條不同版本的鍊，會同時保留兩條鍊，直到其中一條鍊變得更長。
+對任何一個網路中的節點來說，只有最長的那條鍊會被視為正確的版本。在此情況下，即使有多個節點在網路中，仍能保持共識。&lt;/p&gt;
+&lt;h4 id=&#34;三比特幣的發行及運作機制&#34;&gt;（三）比特幣的發行及運作機制&lt;/h4&gt;
+&lt;p&gt;前面提到了比特幣分散式伺服器的設計，在為了維持點對點交易的情況下，網路中的節點需要使用其運算能力將新的區塊將入鍊中，這個過程被稱作為工作量證明（PoW, proof-of-work）。同時需要注意的是，比特幣的發行也是透過工作量證明來完成。
+要完成這個工作量證明，節點須耗費相當的CPU運算能力。當這個工作被滿足後，由此產生的新區塊將不能再被更改，除非重新運算一次。
+然而更多新的區塊將會被加入鍊中，因此若任何節點意圖更改之前已存在鍊上的區塊，它則需要將此區塊並包含所有連接在它之後的區塊一併都重新運算一次。
+只是，在沒有一個中央機構來控制節點的情況下，要如何讓所有節點互相協調運作呢？
+這就跟比特幣的發行有關了。
+比特幣的發行是一種激勵機制。這個激勵機制是能讓整個比特幣節點網路運作如常的一個很重要的環節。同時，這也是能讓比特幣能穩定地被導入到這整個循環的機制。
+簡言之，當一個工作的節點貢獻了運算能力且完成了工作量證明，節點擁有者將會得到比特幣作為獎勵。
+這個激勵機制還有另一層用意，當系統給予貢獻者比特幣，這個獎勵能有效鼓勵所有網路中的節點誠實地按照既定的遊戲規則來運行。&lt;/p&gt;
+&lt;h2 id=&#34;結語與思考&#34;&gt;結語與思考&lt;/h2&gt;
+&lt;p&gt;比特幣被廣泛地認為是第一個使用區塊鍊技術（blockchain technology）的實作應用，這種應用分類被稱為加密貨幣（crypto-currencies）。從比特幣白皮書中，我們也能發現「區塊鍊」（blockchain）這個字並未被直接的使用，但分別提到好幾次「區塊」（block）與鍊（chain）。因此推測，在比特幣這個實例成功之後，為了將背後的技術獨立出來避免混淆而開始普遍使用區塊鍊這個名稱。
+簡單地說，比特幣是一種加密貨幣，而加密貨幣是一種區塊鍊技術的應用。但是區塊鍊並不等於加密貨幣，當然也不等於比特幣。區塊鍊技術已經被廣泛地應用在其他層面，其中許多應用已經不僅僅是加密貨幣而已了。
+另外你可能也會發現，現在的比特幣跟比特幣白皮書相比多了更多特性。原因是因為比特幣也是一個開放且不斷創新進步的社群，很多早期被提出來的一些問題，後來都陸續有人提出解決或是強化的方法了。因此，這也是為什麼至今比特幣仍被認為是入門區塊鍊技術最應該了解的首選實例。&lt;/p&gt;
+&lt;h2 id=&#34;參考資料&#34;&gt;參考資料&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;比特幣白皮書原文版（Satoshi Nakamoto, 2008）&lt;/li&gt;
+&lt;li&gt;比特幣白皮書中文翻譯（翻譯者：AndyLin）&lt;/li&gt;
+&lt;li&gt;比特幣白皮書中文翻譯及註解（翻譯者：金曉）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;本篇文章也同時發表在Ｍedium上：&lt;a href=&#34;https://medium.com/ethereum-foundation-devcon-scholars/%E6%AF%94%E7%89%B9%E5%B9%A3%E7%99%BD%E7%9A%AE%E6%9B%B8-%E9%80%99%E5%88%B0%E5%BA%95%E6%98%AF%E4%BB%80%E9%BA%BC%E5%95%A6-8769df691e7c?source=friends_link&amp;amp;sk=504572478463342757813ac387dff60f&#34;&gt;文章連結&lt;/a&gt;。&lt;/p&gt;
+</description>
+      <author>Calvin Tran</author>
+      <guid>https://maverick.canhtran.me/posts/bitcoinwhitepaper/</guid>
+      <pubDate>Thu, 01 Aug 2019 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
+      <title>Devcon V Scholars Program - The Beginning</title>
+      <link>https://maverick.canhtran.me/posts/devconscholarship/</link>
+      <description>&lt;h2 id=&#34;i-am-accepted&#34;&gt;I am accepted!&lt;/h2&gt;
+&lt;p&gt;In the last two months I have thought of various of topics I could potentially use for my very first article on Medium. Well, I never expected it would be about Devcon5.
+But hey, this is real. On Jul. 17, 2019, I woke up in my bed seeing an email with the title [Devcon 5], which drew my attention immediately. Long story short, I received a full scholarship for attending Devcon5!&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img
+  src=&#34;https://maverick.canhtran.me/images/devconscholar1.png&#34;
+  alt=&#34;&#34;
+  loading=&#34;lazy&#34;
+  decoding=&#34;async&#34;
+  class=&#34;full-width&#34;
+/&gt;
+
+&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h2 id=&#34;so-what-exactly-is-it-about&#34;&gt;So what exactly is it about?&lt;/h2&gt;
+&lt;p&gt;The Devcon5 Scholars Program provides a certain amount of scholarships to students or people from the under-represented groups in the current tech community so they could also experience the magic of Devcon5. The scholarships are provided by Ethereum Foundation.&lt;/p&gt;
+&lt;h2 id=&#34;devcon5-scholarships&#34;&gt;Devcon5 Scholarships&lt;/h2&gt;
+&lt;p&gt;In 2016, I heard about blockchain for the first time while I was working on the Innovation Management project for Postbank. I learned some facts about blockchain and Ethereum smart contracts but due to the lack of ground technical knowledge, I was not able to get deep at that time.
+Half a year ago, blockchain topic has come into my life again because of my current job (I am business developer at an IT startup) and that I got to know some people who currently work on blockchain projects.
+Afterwards, I read some articles about Devcon3 &amp;amp; 4, and my established impression that “Devcon is only for developers with strong technical knowledge” has since been changed.&lt;/p&gt;
+&lt;p&gt;In fact, this is how Ethereum Foundation defines Devcon on the event website:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“Devcon is the Ethereum conference for developers, researchers, thinkers, and makers.”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Even though I am not a software developer, I am as passionate as others in this community about how blockchain will impact our ways to live, work, and play. Why shouldn’t I be attending too?&lt;/p&gt;
+&lt;h2 id=&#34;my-dream-comes-true&#34;&gt;My dream comes true&lt;/h2&gt;
+&lt;p&gt;As much as I want to join, I don’t have the travelling budget for it. Therefore, nothing about Devon5 had been planned for me this year… until I saw this post on Twitter:&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img
+  src=&#34;https://maverick.canhtran.me/images/devconscholar2.png&#34;
+  alt=&#34;&#34;
+  loading=&#34;lazy&#34;
+  decoding=&#34;async&#34;
+  class=&#34;full-width&#34;
+/&gt;
+
+&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;Then you know what happened after that. I was excitedly applying for the scholarships and then was accepted. Essentially, being part of Devcon5 Scholars Program encouraged me to eventually start writing my first article here. In the following months, I will write more articles about my Devcon5 experience and maybe other topics.
+Now I am finally really close, feeling so excited about meeting enthusiastic participants from all over the world in Osaka at Devcon5.
+If you are also attending Devcon5 and would like to meet up for some chats, feel free to leave a comment and get in touch! ❤️&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; This article is also published on Medium &lt;a href=&#34;https://medium.com/ethereum-foundation-devcon-scholars/ethereum-devcon5-scholars-program-i-am-accepted-a22c475a092a?source=friends_link&amp;amp;sk=5f2e1ea2e507808add90b786b1e8c219&#34;&gt;(Link)&lt;/a&gt;&lt;/p&gt;
+</description>
+      <author>Calvin Tran</author>
+      <guid>https://maverick.canhtran.me/posts/devconscholarship/</guid>
+      <pubDate>Fri, 26 Jul 2019 00:00:00 +0000</pubDate>
+    </item>
+    
+  </channel>
+</rss>
