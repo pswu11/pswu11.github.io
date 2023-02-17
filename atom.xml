@@ -3,21 +3,21 @@
     
     <title>PSWU</title>
     <description>A minimal hugo theme focus on content</description>
-    <link>https://maverick.canhtran.me</link>
+    <link>https://pswu.dev</link>
     
     <language>en</language>
     <copyright>Copyright 2023, Calvin Tran</copyright>
     <lastBuildDate>Thu, 05 Dec 2019 00:00:00 +0000</lastBuildDate>
     <generator>Hugo - gohugo.io</generator>
     <docs>http://cyber.harvard.edu/rss/rss.html</docs>
-    <atom:link href="https://maverick.canhtran.me/atom.xml" rel="self" type="application/atom+xml"/>
+    <atom:link href="https://pswu.dev/atom.xml" rel="self" type="application/atom+xml"/>
     
     
     <item>
       <title>Building a Minimalist Website with Hugo in a Day</title>
-      <link>https://maverick.canhtran.me/posts/hugosite/</link>
+      <link>https://pswu.dev/posts/hugosite/</link>
       <description>&lt;p&gt;&lt;img
-  src=&#34;https://maverick.canhtran.me/images/hugosite1.png&#34;
+  src=&#34;https://pswu.dev/images/hugosite1.png&#34;
   alt=&#34;Hugo&#34;
   loading=&#34;lazy&#34;
   decoding=&#34;async&#34;
@@ -54,7 +54,7 @@ But having another full-time job, you get to plan your time well before you kick
 &lt;p&gt;&lt;strong&gt;1. &amp;lt;SITE_NAME&amp;gt;&lt;/strong&gt;&lt;br&gt;
 &lt;strong&gt;2. &amp;lt;GITHUB_USERNAME&amp;gt;.github.io&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img
-  src=&#34;https://maverick.canhtran.me/images/hugosite2.png&#34;
+  src=&#34;https://pswu.dev/images/hugosite2.png&#34;
   alt=&#34;My repositories&#34;
   loading=&#34;lazy&#34;
   decoding=&#34;async&#34;
@@ -72,7 +72,7 @@ Go to where you would like to put your Hugo project and generate a Hugo project:
 &lt;p&gt;&lt;code&gt;hugo new site &amp;lt;HUGO_SITE_NAME&amp;gt;&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;After you have create your Hugo project, Hugo will generate a structure which looks like below:&lt;/p&gt;
 &lt;p&gt;&lt;img
-  src=&#34;https://maverick.canhtran.me/images/hugosite3.png&#34;
+  src=&#34;https://pswu.dev/images/hugosite3.png&#34;
   alt=&#34;Hugo Structure&#34;
   loading=&#34;lazy&#34;
   decoding=&#34;async&#34;
@@ -109,7 +109,7 @@ publishDir = &amp;#34;&amp;lt;GITHUB_USERNAME&amp;gt;.github.io&amp;#34;
 &lt;p&gt;Run this in the terminal:&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;hugo server&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img
-  src=&#34;https://maverick.canhtran.me/images/hugosite4.png&#34;
+  src=&#34;https://pswu.dev/images/hugosite4.png&#34;
   alt=&#34;Hosting on your machine&#34;
   loading=&#34;lazy&#34;
   decoding=&#34;async&#34;
@@ -135,7 +135,7 @@ First, make sure you are still in the project folder.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;hugo&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;This command will generate your website content to the submodule folder we just created:&lt;/p&gt;
 &lt;p&gt;&lt;img
-  src=&#34;https://maverick.canhtran.me/images/hugosite5.png&#34;
+  src=&#34;https://pswu.dev/images/hugosite5.png&#34;
   alt=&#34;Your site is generated&#34;
   loading=&#34;lazy&#34;
   decoding=&#34;async&#34;
@@ -164,16 +164,16 @@ First, make sure you are still in the project folder.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; This article is also published on Medium &lt;a href=&#34;https://medium.com/@pswoo/building-a-minimalist-website-with-hugo-in-a-day-ac19df8ecc52&#34;&gt;(Link)&lt;/a&gt;.&lt;/p&gt;
 </description>
       <author>Calvin Tran</author>
-      <guid>https://maverick.canhtran.me/posts/hugosite/</guid>
+      <guid>https://pswu.dev/posts/hugosite/</guid>
       <pubDate>Thu, 05 Dec 2019 00:00:00 +0000</pubDate>
     </item>
     
     <item>
       <title>Linux Newbie: Running Manjaro on MacBookPro</title>
-      <link>https://maverick.canhtran.me/posts/manjaro-mbp/</link>
+      <link>https://pswu.dev/posts/manjaro-mbp/</link>
       <description>&lt;p&gt;&lt;em&gt;The article explains how to install and set up Manjaro KDE on your Apple MacBook Pro (Early 2015) Retina 13&amp;quot;. If you are a Linux newbie and want to try Manjaro too, this guide is for you!&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img
-  src=&#34;https://maverick.canhtran.me/images/manjaro1.jpeg&#34;
+  src=&#34;https://pswu.dev/images/manjaro1.jpeg&#34;
   alt=&#34;my first manjaro desktop&#34;
   loading=&#34;lazy&#34;
   decoding=&#34;async&#34;
@@ -201,7 +201,7 @@ First, make sure you are still in the project folder.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;sudo pacman -S pamac&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;Run pamac. Search for the application with name Add/Remove Software, and you will find it.&lt;/p&gt;
 &lt;p&gt;&lt;img
-  src=&#34;https://maverick.canhtran.me/images/manjaro2.png&#34;
+  src=&#34;https://pswu.dev/images/manjaro2.png&#34;
   alt=&#34;pacmac manager&#34;
   loading=&#34;lazy&#34;
   decoding=&#34;async&#34;
@@ -255,7 +255,7 @@ polling_interval = 3
 &lt;h3 id=&#34;do-customization&#34;&gt;Do customization.&lt;/h3&gt;
 &lt;p&gt;Now it’s time to customize your desktop the way you want!&lt;/p&gt;
 &lt;p&gt;&lt;img
-  src=&#34;https://maverick.canhtran.me/images/manjaro3.png&#34;
+  src=&#34;https://pswu.dev/images/manjaro3.png&#34;
   alt=&#34;my another linux desktop&#34;
   loading=&#34;lazy&#34;
   decoding=&#34;async&#34;
@@ -273,19 +273,19 @@ polling_interval = 3
 &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; This article is also published on Medium &lt;a href=&#34;https://medium.com/@pswoo/linux-newbie-running-manjaro-on-macbookpro-5db4672351c9?source=friends_link&amp;amp;sk=390c7d8bbf698b4797d08f02139e5f22&#34;&gt;(Link)&lt;/a&gt;&lt;/p&gt;
 </description>
       <author>Calvin Tran</author>
-      <guid>https://maverick.canhtran.me/posts/manjaro-mbp/</guid>
+      <guid>https://pswu.dev/posts/manjaro-mbp/</guid>
       <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
     </item>
     
     <item>
       <title>Ethereum乙太坊開發者大會Devcon5 獎學金計畫</title>
-      <link>https://maverick.canhtran.me/posts/devconscholar-mandarin/</link>
+      <link>https://pswu.dev/posts/devconscholar-mandarin/</link>
       <description>&lt;p&gt;&lt;em&gt;我之前從沒參加過開發者大會，所以這篇文章不會著墨太多在開發者大會的內容，而是想簡單介紹Ethereum開發者大會所提供的獎學金計畫（Scholars Program）。&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;&lt;a href=&#34;https://pswu11.github.io/2019/devconscholarship/&#34;&gt;英文版本：Devcon5 Scholars Program — The Beginning&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;h2 id=&#34;是的我要去參加devcon5了&#34;&gt;是的，我要去參加Devcon5了！&lt;/h2&gt;
 &lt;p&gt;身為一個重度網路使用者，每天早上還沒清醒就是在床上滑個五分鐘的手機，看看天氣，看看郵件訊息。那天早上起床，看到一封新的郵件，開頭是[Devcon 5]，腦袋頓時清醒：&lt;/p&gt;
 &lt;p&gt;&lt;img
-  src=&#34;https://maverick.canhtran.me/images/devconscholar3.png&#34;
+  src=&#34;https://pswu.dev/images/devconscholar3.png&#34;
   alt=&#34;devcon scholar email&#34;
   loading=&#34;lazy&#34;
   decoding=&#34;async&#34;
@@ -313,7 +313,7 @@ polling_interval = 3
 &lt;p&gt;當然，我雖然十分想要去Devcon，但由於票價十分昂貴，加上往返的機票與住宿，所以我今年本來並沒有參加的計畫。
 一直到六月底的時候，我在推特上看到了這個訊息：&lt;/p&gt;
 &lt;p&gt;&lt;img
-  src=&#34;https://maverick.canhtran.me/images/devconscholar2.png&#34;
+  src=&#34;https://pswu.dev/images/devconscholar2.png&#34;
   alt=&#34;twitter-screenshot&#34;
   loading=&#34;lazy&#34;
   decoding=&#34;async&#34;
@@ -331,13 +331,13 @@ polling_interval = 3
 &lt;p&gt;本篇文章也同時發表在Ｍedium上：&lt;a href=&#34;https://medium.com/ethereum-foundation-devcon-scholars/ethereum%E4%B9%99%E5%A4%AA%E5%9D%8A%E9%96%8B%E7%99%BC%E8%80%85%E5%A4%A7%E6%9C%83devcon5-%E7%8D%8E%E5%AD%B8%E9%87%91%E8%A8%88%E7%95%AB-1-3824bec3e606?source=friends_link&amp;amp;sk=2a27b521c934b4e1a0185cc18d46738e&#34;&gt;文章連結&lt;/a&gt;&lt;/p&gt;
 </description>
       <author>Calvin Tran</author>
-      <guid>https://maverick.canhtran.me/posts/devconscholar-mandarin/</guid>
+      <guid>https://pswu.dev/posts/devconscholar-mandarin/</guid>
       <pubDate>Thu, 01 Aug 2019 00:00:00 +0000</pubDate>
     </item>
     
     <item>
       <title>比特幣白皮書 Bitcoin White Paper — 這到底是什麼啦？</title>
-      <link>https://maverick.canhtran.me/posts/bitcoinwhitepaper/</link>
+      <link>https://pswu.dev/posts/bitcoinwhitepaper/</link>
       <description>&lt;p&gt;&lt;em&gt;其實網路上關於比特幣和區塊鍊的文章已經很多，然而我寫此文章的目的是希望讓非資訊技術背景的麻瓜們也能理解「比特幣白皮書」的概括重點內容並能引起興趣。文章中關於比特幣的內容僅根據「比特幣白皮書」所描述，並且盡量不使用複雜的專有名詞，而以簡單易懂的敘述方式取代之，如有任何建議還請不吝指教。&lt;/em&gt;&lt;/p&gt;
 &lt;h2 id=&#34;背景介紹&#34;&gt;背景介紹&lt;/h2&gt;
 &lt;p&gt;2008年，中本聰（Satoshi Nakamoto）在網路上發表了一篇名為「比特幣：一種點對點的電子現金交易系統」的論文，英文原文為 Bitcoin: A Peer-to-Peer Electronic Cash System，現在也被稱為「比特幣白皮書」。
@@ -367,7 +367,7 @@ polling_interval = 3
 在比特幣的資料結構下，多筆交易（item）會形成一個區塊（block）。首先區塊會被雜湊演算法（hash，又譯為哈西）加密處理，然後時間戳記伺服器（timestamp server）會在此雜湊（hash）中加上時間戳記並將他公開廣播到網路上。
 重要的是，每一個時間戳記都包含了上一個時間戳記在這個區塊的雜湊中，因此形成了一條鍊的結構。這樣的結構下，每當有新的區塊包含時間戳記加入時，都加強（reinforce）了之前的區塊使他們難以被竄改（tampering）。&lt;/p&gt;
 &lt;p&gt;&lt;img
-  src=&#34;https://maverick.canhtran.me/images/bitcoin.png&#34;
+  src=&#34;https://pswu.dev/images/bitcoin.png&#34;
   alt=&#34;&#34;
   loading=&#34;lazy&#34;
   decoding=&#34;async&#34;
@@ -403,19 +403,19 @@ polling_interval = 3
 &lt;p&gt;本篇文章也同時發表在Ｍedium上：&lt;a href=&#34;https://medium.com/ethereum-foundation-devcon-scholars/%E6%AF%94%E7%89%B9%E5%B9%A3%E7%99%BD%E7%9A%AE%E6%9B%B8-%E9%80%99%E5%88%B0%E5%BA%95%E6%98%AF%E4%BB%80%E9%BA%BC%E5%95%A6-8769df691e7c?source=friends_link&amp;amp;sk=504572478463342757813ac387dff60f&#34;&gt;文章連結&lt;/a&gt;。&lt;/p&gt;
 </description>
       <author>Calvin Tran</author>
-      <guid>https://maverick.canhtran.me/posts/bitcoinwhitepaper/</guid>
+      <guid>https://pswu.dev/posts/bitcoinwhitepaper/</guid>
       <pubDate>Thu, 01 Aug 2019 00:00:00 +0000</pubDate>
     </item>
     
     <item>
       <title>Devcon V Scholars Program - The Beginning</title>
-      <link>https://maverick.canhtran.me/posts/devconscholarship/</link>
+      <link>https://pswu.dev/posts/devconscholarship/</link>
       <description>&lt;h2 id=&#34;i-am-accepted&#34;&gt;I am accepted!&lt;/h2&gt;
 &lt;p&gt;In the last two months I have thought of various of topics I could potentially use for my very first article on Medium. Well, I never expected it would be about Devcon5.
 But hey, this is real. On Jul. 17, 2019, I woke up in my bed seeing an email with the title [Devcon 5], which drew my attention immediately. Long story short, I received a full scholarship for attending Devcon5!&lt;/p&gt;
 &lt;p&gt; &lt;/p&gt;
 &lt;p&gt;&lt;img
-  src=&#34;https://maverick.canhtran.me/images/devconscholar1.png&#34;
+  src=&#34;https://pswu.dev/images/devconscholar1.png&#34;
   alt=&#34;&#34;
   loading=&#34;lazy&#34;
   decoding=&#34;async&#34;
@@ -439,7 +439,7 @@ Afterwards, I read some articles about Devcon3 &amp;amp; 4, and my established i
 &lt;p&gt;As much as I want to join, I don’t have the travelling budget for it. Therefore, nothing about Devon5 had been planned for me this year… until I saw this post on Twitter:&lt;/p&gt;
 &lt;p&gt; &lt;/p&gt;
 &lt;p&gt;&lt;img
-  src=&#34;https://maverick.canhtran.me/images/devconscholar2.png&#34;
+  src=&#34;https://pswu.dev/images/devconscholar2.png&#34;
   alt=&#34;&#34;
   loading=&#34;lazy&#34;
   decoding=&#34;async&#34;
@@ -455,7 +455,7 @@ If you are also attending Devcon5 and would like to meet up for some chats, feel
 &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; This article is also published on Medium &lt;a href=&#34;https://medium.com/ethereum-foundation-devcon-scholars/ethereum-devcon5-scholars-program-i-am-accepted-a22c475a092a?source=friends_link&amp;amp;sk=5f2e1ea2e507808add90b786b1e8c219&#34;&gt;(Link)&lt;/a&gt;&lt;/p&gt;
 </description>
       <author>Calvin Tran</author>
-      <guid>https://maverick.canhtran.me/posts/devconscholarship/</guid>
+      <guid>https://pswu.dev/posts/devconscholarship/</guid>
       <pubDate>Fri, 26 Jul 2019 00:00:00 +0000</pubDate>
     </item>
     

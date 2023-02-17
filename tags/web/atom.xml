@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>web on PSWU</title>
-    <link>https://maverick.canhtran.me/tags/web/</link>
+    <link>https://pswu.dev/tags/web/</link>
     <description>Recent content in web on PSWU</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 Dec 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://maverick.canhtran.me/tags/web/atom.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 05 Dec 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://pswu.dev/tags/web/atom.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Building a Minimalist Website with Hugo in a Day</title>
-      <link>https://maverick.canhtran.me/posts/hugosite/</link>
+      <link>https://pswu.dev/posts/hugosite/</link>
       <pubDate>Thu, 05 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://maverick.canhtran.me/posts/hugosite/</guid>
+      <guid>https://pswu.dev/posts/hugosite/</guid>
       <description>How much time do you need to build a personal website with a blog module?
 I&amp;rsquo;ve been having this idea in mind for several weeks - building my personal website. But having another full-time job, you get to plan your time well before you kick-off a side project. Otherwise, you might feel like you would never see the end of it.
 So the question is how you want to do it?</description>

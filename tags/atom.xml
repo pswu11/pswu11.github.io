@@ -2,62 +2,62 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on PSWU</title>
-    <link>https://maverick.canhtran.me/tags/</link>
+    <link>https://pswu.dev/tags/</link>
     <description>Recent content in Tags on PSWU</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 Dec 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://maverick.canhtran.me/tags/atom.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 05 Dec 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://pswu.dev/tags/atom.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>hugo</title>
-      <link>https://maverick.canhtran.me/tags/hugo/</link>
+      <link>https://pswu.dev/tags/hugo/</link>
       <pubDate>Thu, 05 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://maverick.canhtran.me/tags/hugo/</guid>
+      <guid>https://pswu.dev/tags/hugo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>web</title>
-      <link>https://maverick.canhtran.me/tags/web/</link>
+      <link>https://pswu.dev/tags/web/</link>
       <pubDate>Thu, 05 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://maverick.canhtran.me/tags/web/</guid>
+      <guid>https://pswu.dev/tags/web/</guid>
       <description></description>
     </item>
     
     <item>
       <title>linux</title>
-      <link>https://maverick.canhtran.me/tags/linux/</link>
+      <link>https://pswu.dev/tags/linux/</link>
       <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://maverick.canhtran.me/tags/linux/</guid>
+      <guid>https://pswu.dev/tags/linux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>blockchain</title>
-      <link>https://maverick.canhtran.me/tags/blockchain/</link>
+      <link>https://pswu.dev/tags/blockchain/</link>
       <pubDate>Thu, 01 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://maverick.canhtran.me/tags/blockchain/</guid>
+      <guid>https://pswu.dev/tags/blockchain/</guid>
       <description></description>
     </item>
     
     <item>
       <title>chinese</title>
-      <link>https://maverick.canhtran.me/tags/chinese/</link>
+      <link>https://pswu.dev/tags/chinese/</link>
       <pubDate>Thu, 01 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://maverick.canhtran.me/tags/chinese/</guid>
+      <guid>https://pswu.dev/tags/chinese/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ethereum</title>
-      <link>https://maverick.canhtran.me/tags/ethereum/</link>
+      <link>https://pswu.dev/tags/ethereum/</link>
       <pubDate>Fri, 26 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://maverick.canhtran.me/tags/ethereum/</guid>
+      <guid>https://pswu.dev/tags/ethereum/</guid>
       <description></description>
     </item>
     

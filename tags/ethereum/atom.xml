@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ethereum on PSWU</title>
-    <link>https://maverick.canhtran.me/tags/ethereum/</link>
+    <link>https://pswu.dev/tags/ethereum/</link>
     <description>Recent content in ethereum on PSWU</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 26 Jul 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://maverick.canhtran.me/tags/ethereum/atom.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 26 Jul 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://pswu.dev/tags/ethereum/atom.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Devcon V Scholars Program - The Beginning</title>
-      <link>https://maverick.canhtran.me/posts/devconscholarship/</link>
+      <link>https://pswu.dev/posts/devconscholarship/</link>
       <pubDate>Fri, 26 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://maverick.canhtran.me/posts/devconscholarship/</guid>
+      <guid>https://pswu.dev/posts/devconscholarship/</guid>
       <description>I am accepted! In the last two months I have thought of various of topics I could potentially use for my very first article on Medium. Well, I never expected it would be about Devcon5. But hey, this is real. On Jul. 17, 2019, I woke up in my bed seeing an email with the title [Devcon 5], which drew my attention immediately. Long story short, I received a full scholarship for attending Devcon5!</description>
     </item>
     

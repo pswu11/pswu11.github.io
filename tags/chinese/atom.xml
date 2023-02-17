@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>chinese on PSWU</title>
-    <link>https://maverick.canhtran.me/tags/chinese/</link>
+    <link>https://pswu.dev/tags/chinese/</link>
     <description>Recent content in chinese on PSWU</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 01 Aug 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://maverick.canhtran.me/tags/chinese/atom.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 01 Aug 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://pswu.dev/tags/chinese/atom.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ethereum乙太坊開發者大會Devcon5 獎學金計畫</title>
-      <link>https://maverick.canhtran.me/posts/devconscholar-mandarin/</link>
+      <link>https://pswu.dev/posts/devconscholar-mandarin/</link>
       <pubDate>Thu, 01 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://maverick.canhtran.me/posts/devconscholar-mandarin/</guid>
+      <guid>https://pswu.dev/posts/devconscholar-mandarin/</guid>
       <description>我之前從沒參加過開發者大會，所以這篇文章不會著墨太多在開發者大會的內容，而是想簡單介紹Ethereum開發者大會所提供的獎學金計畫（Scholars Program）。
 英文版本：Devcon5 Scholars Program — The Beginning
 是的，我要去參加Devcon5了！ 身為一個重度網路使用者，每天早上還沒清醒就是在床上滑個五分鐘的手機，看看天氣，看看郵件訊息。那天早上起床，看到一封新的郵件，開頭是[Devcon 5]，腦袋頓時清醒：
@@ -35,10 +35,10 @@ Devcon is the Ethereum conference for developers, researchers, thinkers, and ma
     
     <item>
       <title>比特幣白皮書 Bitcoin White Paper — 這到底是什麼啦？</title>
-      <link>https://maverick.canhtran.me/posts/bitcoinwhitepaper/</link>
+      <link>https://pswu.dev/posts/bitcoinwhitepaper/</link>
       <pubDate>Thu, 01 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://maverick.canhtran.me/posts/bitcoinwhitepaper/</guid>
+      <guid>https://pswu.dev/posts/bitcoinwhitepaper/</guid>
       <description>其實網路上關於比特幣和區塊鍊的文章已經很多，然而我寫此文章的目的是希望讓非資訊技術背景的麻瓜們也能理解「比特幣白皮書」的概括重點內容並能引起興趣。文章中關於比特幣的內容僅根據「比特幣白皮書」所描述，並且盡量不使用複雜的專有名詞，而以簡單易懂的敘述方式取代之，如有任何建議還請不吝指教。
 背景介紹 2008年，中本聰（Satoshi Nakamoto）在網路上發表了一篇名為「比特幣：一種點對點的電子現金交易系統」的論文，英文原文為 Bitcoin: A Peer-to-Peer Electronic Cash System，現在也被稱為「比特幣白皮書」。 其實中本聰到底是誰？雖然網路上有諸多猜測，但目前並沒有一個確切的說法。 在中本聰的論文中，他提出了一種可以實現點對點（P2P, peer-to-peer）交易的電子現金交易系統「比特幣」（Bitcoin）。換句話說，這是一種不需要第三方金融機構作為中間人的交易系統。 比特幣白皮書中所提到的實現比特幣這個交易系統的技術，則是現在大家所知的區塊鍊技術。
 為什麼我們需要比特幣？ 在傳統的金融交易體系中，進行交易時我們都需要可信任的銀行作為第三方金融機構，以防止金融詐騙。同樣的狀況也適用於現今的電子貨幣，由於受款人無法有效驗證付款人是否重複支付這個電子貨幣，為了避免這種雙重支付（double spending problem）的問題，我們即需要一個中介機構來擔任可信任的中間人。 這樣的運行模式，也被稱為是一種以信任為基礎的交易模式（trust-based model）。 然而，這種依賴第三方機構的交易方式，往往需要使用者支付中間人手續費用。在此情況下，任何金額微小的交易都將因為提高的交易成本而受到限制。實際上，即使有可信任的中間人，也很難完全杜絕重複付款這類的金融詐騙。 比特幣即是中本聰所提出的解決方案。

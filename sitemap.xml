@@ -2,51 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://maverick.canhtran.me/</loc>
+    <loc>https://pswu.dev/</loc>
     <lastmod>2019-12-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url><url>
-    <loc>https://maverick.canhtran.me/posts/hugosite/</loc>
+    <loc>https://pswu.dev/posts/hugosite/</loc>
     <lastmod>2019-12-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://maverick.canhtran.me/tags/hugo/</loc>
+    <loc>https://pswu.dev/tags/hugo/</loc>
     <lastmod>2019-12-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://maverick.canhtran.me/posts/</loc>
+    <loc>https://pswu.dev/posts/</loc>
     <lastmod>2019-12-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://maverick.canhtran.me/tags/</loc>
+    <loc>https://pswu.dev/tags/</loc>
     <lastmod>2019-12-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://maverick.canhtran.me/tags/web/</loc>
+    <loc>https://pswu.dev/tags/web/</loc>
     <lastmod>2019-12-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://maverick.canhtran.me/tags/linux/</loc>
+    <loc>https://pswu.dev/tags/linux/</loc>
     <lastmod>2019-10-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://maverick.canhtran.me/posts/manjaro-mbp/</loc>
+    <loc>https://pswu.dev/posts/manjaro-mbp/</loc>
     <lastmod>2019-10-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://maverick.canhtran.me/tags/blockchain/</loc>
+    <loc>https://pswu.dev/tags/blockchain/</loc>
     <lastmod>2019-08-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://maverick.canhtran.me/tags/chinese/</loc>
+    <loc>https://pswu.dev/tags/chinese/</loc>
     <lastmod>2019-08-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://maverick.canhtran.me/posts/devconscholar-mandarin/</loc>
+    <loc>https://pswu.dev/posts/devconscholar-mandarin/</loc>
     <lastmod>2019-08-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://maverick.canhtran.me/posts/bitcoinwhitepaper/</loc>
+    <loc>https://pswu.dev/posts/bitcoinwhitepaper/</loc>
     <lastmod>2019-08-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://maverick.canhtran.me/posts/devconscholarship/</loc>
+    <loc>https://pswu.dev/posts/devconscholarship/</loc>
     <lastmod>2019-07-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://maverick.canhtran.me/tags/ethereum/</loc>
+    <loc>https://pswu.dev/tags/ethereum/</loc>
     <lastmod>2019-07-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://maverick.canhtran.me/about/</loc>
+    <loc>https://pswu.dev/about/</loc>
   </url><url>
-    <loc>https://maverick.canhtran.me/pages/</loc>
+    <loc>https://pswu.dev/pages/</loc>
   </url>
 </urlset>
