@@ -16,9 +16,9 @@
     <item>
       <title>Learning notes: staking on Ethereum</title>
       <link>https://pswu.dev/posts/staking-on-eth-1/</link>
-      <description>&lt;p&gt;&lt;em&gt;Note: This post doesn&amp;rsquo;t intend to be investment advice, so I intentionally
-avoid mentioning specific staking providers. If you find any information
-unclear/incorrect, feel free to let me know.&lt;/em&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;em&gt;This post is not investment advice, so I intentionally avoid mentioning
+specific staking providers. If you find any information unclear/incorrect, just
+let me know as I&amp;rsquo;m also learning. 🙏&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;We talked about staking during the recent &lt;a href=&#34;https://www.shefi.org/&#34;&gt;SheFi&lt;/a&gt;
 session. And I noticed it is among the most confusing topics for many others,
 including myself. It&amp;rsquo;s not hard to grasp the concept of why staking is necessary
@@ -87,8 +87,17 @@ being open source also means the project welcomes community feedback, issues,
 and contributions. It&amp;rsquo;s important to note that &lt;strong&gt;open source is not proof of
 secure code or trustworthiness&lt;/strong&gt;, even though an active open source community is
 often seen as a positive signal.&lt;/p&gt;
-&lt;p&gt;Do you have any feedback? Let me know if you feel any key information needs to
-be included to help more people understand this topic!&lt;/p&gt;
+&lt;h2 id=&#34;at-last&#34;&gt;At last&amp;hellip;&lt;/h2&gt;
+&lt;p&gt;Thank you for reading until here. Let me know if you feel any key information
+needs to be included to help more people understand this topic! Happy to
+exchange ideas!&lt;/p&gt;
+&lt;p&gt;Special thanks to &lt;a href=&#34;https://polygon.technology/&#34;&gt;Polygon&lt;/a&gt; for sponsoring my
+participation at SheFi! 🫶&lt;/p&gt;
+&lt;p&gt;References:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://ethereum.org/en/staking/&#34;&gt;Ethereum Staking Page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;SheFi Course Material&lt;/li&gt;
+&lt;/ul&gt;
 &lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
