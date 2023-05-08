@@ -7,11 +7,106 @@
     
     <language>en</language>
     <copyright>Copyright 2023, Calvin Tran</copyright>
-    <lastBuildDate>Thu, 05 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 07 May 2023 00:00:00 +0000</lastBuildDate>
     <generator>Hugo - gohugo.io</generator>
     <docs>http://cyber.harvard.edu/rss/rss.html</docs>
     <atom:link href="https://pswu.dev/atom.xml" rel="self" type="application/atom+xml"/>
     
+    
+    <item>
+      <title>Learning notes: staking on Ethereum</title>
+      <link>https://pswu.dev/posts/staking-on-eth-1/</link>
+      <description>&lt;p&gt;&lt;em&gt;Note: This post doesn&amp;rsquo;t intend to be investment advice, so I intentionally
+avoid mentioning specific staking providers. If you find any information
+unclear/incorrect, feel free to let me know.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;We talked about staking during the recent &lt;a href=&#34;https://www.shefi.org/&#34;&gt;SheFi&lt;/a&gt;
+session. And I noticed it is among the most confusing topics for many others,
+including myself. It&amp;rsquo;s not hard to grasp the concept of why staking is necessary
+for security and decentralization, and why it might be an interesting way to
+invest. But with all the staking options out there, what are the differences?
+While learning about this, I created a mental map to clarify my thoughts. I&amp;rsquo;d
+like to share this mental map and my train of thought in this blog post, and
+hopefully it&amp;rsquo;s helpful for others who are also learning the same topic.&lt;/p&gt;
+&lt;p&gt;I use a tree graph to highlight relevant traits and requirements of different
+staking options from the perspective of stakers:&lt;/p&gt;
+&lt;p&gt;&lt;img
+  src=&#34;https://pswu.dev/images/mental-map-staking.png&#34;
+  alt=&#34;mental mapstaking for staking on eth2&#34;
+  loading=&#34;lazy&#34;
+  decoding=&#34;async&#34;
+  class=&#34;full-width&#34;
+/&gt;
+
+&lt;/p&gt;
+&lt;p&gt;To add more context to the tree graph above, I also put together a list of
+(non-exhaustive) questions a potential staker could ask when evaluating
+different staking providers (especially staking pools) and why these questions
+matter.&lt;/p&gt;
+&lt;h3 id=&#34;can-i-stake-using-a-non-custodial-wallet&#34;&gt;Can I stake using a non-custodial wallet?&lt;/h3&gt;
+&lt;p&gt;This is the key to determining whether you have full ownership of your staking
+rewards. You might have heard people saying - staking pools are decentralized,
+so your rewards are safe. Be careful not to take it too literally because it&amp;rsquo;s
+based on many assumptions&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. If you participate in staking pools using a
+custodial exchange, the tokens technically go to your custodial wallet. So you
+don&amp;rsquo;t &lt;strong&gt;truly&lt;/strong&gt; own them until you transfer them back to your non-custodial
+wallet.&lt;/p&gt;
+&lt;h3 id=&#34;is-the-staking-process-based-on-a-smart-contract&#34;&gt;Is the staking process based on a smart contract?&lt;/h3&gt;
+&lt;p&gt;It&amp;rsquo;s worth noticing that &lt;strong&gt;not all staking pools are based on smart contracts&lt;/strong&gt;.
+Therefore, not all of them are decentralized. It&amp;rsquo;s more ideal when smart
+contracts own&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; the whole staking process, not the node operators or the
+service providers. Also, there should be a built-in incentivization mechanism to
+prevent malicious node operators. That said, &lt;strong&gt;not all smart contracts are
+secure&lt;/strong&gt;, so you should ask more questions.&lt;/p&gt;
+&lt;h3 id=&#34;has-the-smart-contract-or-even-other-parts-of-the-system-been-audited-if-so-has-the-team-published-the-audit-reports&#34;&gt;Has the smart contract (or even other parts of the system) been audited? If so, has the team published the audit reports?&lt;/h3&gt;
+&lt;p&gt;There are many staking pools out there that are based on smart contracts. But we
+know that smart contracts are written by humans, and humans make mistakes. It&amp;rsquo;s
+important to observe whether the developers behind the project have done their
+best to secure the system and resolve the vulnerabilities found. One indicator
+would be whether they have sought smart contract auditors to audit their code
+&lt;strong&gt;and&lt;/strong&gt; whether they have published the reports with follow-up actions.&lt;/p&gt;
+&lt;h3 id=&#34;who-controls-the-withdrawal-key&#34;&gt;Who controls the withdrawal key?&lt;/h3&gt;
+&lt;p&gt;If you are more technical, you might even want to understand who controls the
+withdrawal credentials. For example, some staking pools make node operators
+delegate their withdrawal keys to a smart contract, which points to the staking
+pools. This prevents the node operators from withdrawing staked ETH or excessive
+rewards. To learn more about the withdrawal key, you could refer to the
+&lt;a href=&#34;https://ethereum.org/en/developers/docs/consensus-mechanisms/pos/keys/&#34;&gt;Ethereum documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;what-is-the-liquidity-of-staking-pools&#34;&gt;What is the liquidity of staking pools?&lt;/h3&gt;
+&lt;p&gt;In normal staking, your staked ETH becomes illiquidable. But in liquid staking,
+a type of staking pool, you receive ERC-20 tokens that represent your staking
+rewards. You could then reinvest these tokens or use them as collateral. The
+liquidity doesn&amp;rsquo;t only depend on whether the token is ERC-20 (fungible); it&amp;rsquo;s
+also relevant to check whether you could resell your tokens back to the
+platform, the trading volumes of this token, and what the ratio vs. ETH is,
+etc., &lt;strong&gt;depending on your own investment preference&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;is-the-project-open-source&#34;&gt;Is the project open-source?&lt;/h3&gt;
+&lt;p&gt;A common misconception is that being open-source only means publishing the code.
+Indeed, code transparency is one of the benefits of being open source. However,
+being open source also means the project welcomes community feedback, issues,
+and contributions. It&amp;rsquo;s important to note that &lt;strong&gt;open source is not proof of
+secure code&lt;/strong&gt; or trustworthiness, even though an active open source community is
+often seen as a positive signal.&lt;/p&gt;
+&lt;p&gt;Do you have any feedback? Let me know if you feel any key information needs to
+be included to help more people understand this topic!&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;In some occassions, &lt;strong&gt;stakings pools&lt;/strong&gt; is used interchangeably with **
+smart-contract based liquid staking**, and it&amp;rsquo;s assumed that users interact
+with the platform using a non-custodial wallet.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34;&gt;
+&lt;p&gt;Note that smart contracts could also have some owner addresses with
+unreasonable privileges that compromise security.&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+      <author>Calvin Tran</author>
+      <guid>https://pswu.dev/posts/staking-on-eth-1/</guid>
+      <pubDate>Sun, 07 May 2023 00:00:00 +0000</pubDate>
+    </item>
     
     <item>
       <title>Building a Minimalist Website with Hugo in a Day</title>

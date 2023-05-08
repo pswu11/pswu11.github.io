@@ -6,7 +6,17 @@
     <description>Recent content in blockchain on PSWU</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 01 Aug 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://pswu.dev/tags/blockchain/atom.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 07 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://pswu.dev/tags/blockchain/atom.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Learning notes: staking on Ethereum</title>
+      <link>https://pswu.dev/posts/staking-on-eth-1/</link>
+      <pubDate>Sun, 07 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://pswu.dev/posts/staking-on-eth-1/</guid>
+      <description>Note: This post doesn&amp;rsquo;t intend to be investment advice, so I intentionally avoid mentioning specific staking providers. If you find any information unclear/incorrect, feel free to let me know.
+We talked about staking during the recent SheFi session. And I noticed it is among the most confusing topics for many others, including myself. It&amp;rsquo;s not hard to grasp the concept of why staking is necessary for security and decentralization, and why it might be an interesting way to invest.</description>
+    </item>
+    
     <item>
       <title>Ethereum乙太坊開發者大會Devcon5 獎學金計畫</title>
       <link>https://pswu.dev/posts/devconscholar-mandarin/</link>

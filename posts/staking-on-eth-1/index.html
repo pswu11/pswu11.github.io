@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Liste - https://pswu.dev">
+    <title>Learning notes: staking on Ethereum | PSWU</title>
+    <meta name="description" content="A minimal hugo theme focus on content">
+    <meta property="og:title" content="Learning notes: staking on Ethereum" />
+<meta property="og:description" content="Note: This post doesn&rsquo;t intend to be investment advice, so I intentionally avoid mentioning specific staking providers. If you find any information unclear/incorrect, feel free to let me know.
+We talked about staking during the recent SheFi session. And I noticed it is among the most confusing topics for many others, including myself. It&rsquo;s not hard to grasp the concept of why staking is necessary for security and decentralization, and why it might be an interesting way to invest." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://pswu.dev/posts/staking-on-eth-1/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-05-07T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-05-07T00:00:00+00:00" />
+
+    <meta itemprop="name" content="Learning notes: staking on Ethereum">
+<meta itemprop="description" content="Note: This post doesn&rsquo;t intend to be investment advice, so I intentionally avoid mentioning specific staking providers. If you find any information unclear/incorrect, feel free to let me know.
+We talked about staking during the recent SheFi session. And I noticed it is among the most confusing topics for many others, including myself. It&rsquo;s not hard to grasp the concept of why staking is necessary for security and decentralization, and why it might be an interesting way to invest."><meta itemprop="datePublished" content="2023-05-07T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2023-05-07T00:00:00+00:00" />
+<meta itemprop="wordCount" content="745">
+<meta itemprop="keywords" content="blockchain,ethereum," />
+    
+    <link rel="canonical" href="https://pswu.dev/posts/staking-on-eth-1/">
+    <link rel="icon" href="https://pswu.dev/assets/favicon.ico">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link href="https://www.google-analytics.com" rel="preconnect" crossorigin>
+    <link rel="alternate" type="application/atom+xml" title="PSWU" href="https://pswu.dev/atom.xml" />
+    <link rel="alternate" type="application/json" title="PSWU" href="https://pswu.dev/feed.json" />
+    <link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=">
+    
+    
+    <style>*,:after,:before{box-sizing:border-box;padding:0}body{font:1rem/1.5 '-apple-system',BlinkMacSystemFont,avenir next,avenir,helvetica,helvetica neue,ubuntu,roboto,noto,segoe ui,arial,sans-serif;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;padding:2rem;background:#f5f5f5;color:#000}.skip-link{position:absolute;top:-40px;left:0;background:#eee;z-index:100}.skip-link:focus{top:0}h1,h2,h3,h4,h5,strong,b{font-size:inherit;font-weight:600}header{line-height:2;padding-bottom:1.5rem}.link{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-decoration:none}.time{font-variant-numeric:tabular-nums;white-space:nowrap}blockquote{border-left:5px solid #eee;padding-left:1rem;margin:0}a,a:visited{color:inherit}a:hover,a.heading-link{text-decoration:none}pre{padding:.5rem;overflow:auto;overflow-x:scroll;overflow-wrap:normal}code,pre{font-family:San Francisco Mono,Monaco,consolas,lucida console,dejavu sans mono,bitstream vera sans mono,monospace;font-size:small;background:#eee}code{margin:.1rem;border:none}ul{list-style-type:square}ul,ol{padding-left:1.2rem}.list{line-height:2;list-style-type:none;padding-left:0}.list li{padding-bottom:.1rem}.meta{color:#777}.content{max-width:70ch;margin:0 auto}.footer{max-width:70ch;margin:0 auto}header{line-height:2;display:flex;justify-content:space-between;padding-bottom:1rem}header a{text-decoration:none}header ul{list-style-type:none;padding:0}header li,header a{display:inline}h2.post{padding-top:.5rem}header ul a:first-child{padding-left:1rem}.nav{height:1px;background:#000;content:'';max-width:10%}.list li{display:flex;align-items:baseline}.list li time{flex:initial}.hr-list{margin-top:0;margin-bottom:0;margin-right:.5rem;margin-left:.5rem;height:1px;border:0;border-bottom:1px dotted #ccc;flex:1 0 1rem}.m,hr{border:0;margin:3rem 0}img{max-width:100%;height:auto}.post-date{margin:5% 0}.index-date{color:#9a9a9a}.animate-blink{animation:opacity 1s infinite;opacity:1}@keyframes opacity{0%{opacity:1}50%{opacity:.5}100%{opacity:0}}.tags{display:flex;justify-content:space-between}.tags ul{padding:0;margin:0}.tags li{display:inline}.avatar{height:120px;width:120px;position:relative;margin:-10px 0 0 15px;float:right;border-radius:50%} </style>
+  
+    
+  
+  
+  <script type="application/ld+json">
+  {
+      "@context": "http://schema.org",
+      "@type": "BlogPosting",
+      "articleSection": "posts",
+      "name": "Learning notes: staking on Ethereum",
+      "headline": "Learning notes: staking on Ethereum",
+      "alternativeHeadline": "",
+      "description": "Note: This post doesn\u0026rsquo;t intend to be investment advice, so I intentionally avoid mentioning specific staking providers. If you find any information unclear\/incorrect, feel free to let me know.\nWe talked about staking during the recent SheFi session. And I noticed it is among the most confusing topics for many others, including myself. It\u0026rsquo;s not hard to grasp the concept of why staking is necessary for security and decentralization, and why it might be an interesting way to invest.",
+      "inLanguage": "en-us",
+      "isFamilyFriendly": "true",
+      "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https:\/\/pswu.dev\/posts\/staking-on-eth-1\/"
+      },
+      "author" : {
+          "@type": "Person",
+          "name": "Pei-Shan Wu"
+      },
+      "creator" : {
+          "@type": "Person",
+          "name": "Pei-Shan Wu"
+      },
+      "accountablePerson" : {
+          "@type": "Person",
+          "name": "Pei-Shan Wu"
+      },
+      "copyrightHolder" : "PSWU",
+      "copyrightYear" : "2023",
+      "dateCreated": "2023-05-07T00:00:00.00Z",
+      "datePublished": "2023-05-07T00:00:00.00Z",
+      "dateModified": "2023-05-07T00:00:00.00Z",
+      "publisher":{
+          "@type":"Organization",
+          "name": "PSWU",
+          "url": "https://pswu.dev",
+          "logo": {
+              "@type": "ImageObject",
+              "url": "https:\/\/pswu.dev\/assets\/favicon.ico",
+              "width":"32",
+              "height":"32"
+          }
+      },
+      "image": "https://pswu.dev/assets/favicon.ico",
+      "url" : "https:\/\/pswu.dev\/posts\/staking-on-eth-1\/",
+      "wordCount" : "745",
+      "genre" : [ "blockchain" , "ethereum" ],
+      "keywords" : [ "blockchain" , "ethereum" ]
+  }
+  </script>
+  
+  
+  </head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main</a>
+  <main id="main">
+  <div class="content">
+    <header>
+<p style="padding: 0;margin: 0;">
+  <a href="/">
+    <b>PSWU</b>
+    <span class="text-stone-500 animate-blink">▮</span>
+  </a>
+</p>
+<ul style="padding: 0;margin: 0;">
+  
+  
+  <li class="">
+    <a href="/posts/"><span>Post</span></a>
+    
+  <li class="">
+    <a href="/about/"><span>About</span></a>
+    
+  </li>
+</ul>
+</header>
+<hr class="hr-list" style="padding: 0;margin: 0;">
+    <section>
+      <h2 class="post">Learning notes: staking on Ethereum</h2>
+      <p><em>Note: This post doesn&rsquo;t intend to be investment advice, so I intentionally
+avoid mentioning specific staking providers. If you find any information
+unclear/incorrect, feel free to let me know.</em></p>
+<p>We talked about staking during the recent <a href="https://www.shefi.org/">SheFi</a>
+session. And I noticed it is among the most confusing topics for many others,
+including myself. It&rsquo;s not hard to grasp the concept of why staking is necessary
+for security and decentralization, and why it might be an interesting way to
+invest. But with all the staking options out there, what are the differences?
+While learning about this, I created a mental map to clarify my thoughts. I&rsquo;d
+like to share this mental map and my train of thought in this blog post, and
+hopefully it&rsquo;s helpful for others who are also learning the same topic.</p>
+<p>I use a tree graph to highlight relevant traits and requirements of different
+staking options from the perspective of stakers:</p>
+<p><img
+  src="/images/mental-map-staking.png"
+  alt="mental mapstaking for staking on eth2"
+  loading="lazy"
+  decoding="async"
+  class="full-width"
+/>
+
+</p>
+<p>To add more context to the tree graph above, I also put together a list of
+(non-exhaustive) questions a potential staker could ask when evaluating
+different staking providers (especially staking pools) and why these questions
+matter.</p>
+<h3 id="can-i-stake-using-a-non-custodial-wallet">Can I stake using a non-custodial wallet?</h3>
+<p>This is the key to determining whether you have full ownership of your staking
+rewards. You might have heard people saying - staking pools are decentralized,
+so your rewards are safe. Be careful not to take it too literally because it&rsquo;s
+based on many assumptions<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. If you participate in staking pools using a
+custodial exchange, the tokens technically go to your custodial wallet. So you
+don&rsquo;t <strong>truly</strong> own them until you transfer them back to your non-custodial
+wallet.</p>
+<h3 id="is-the-staking-process-based-on-a-smart-contract">Is the staking process based on a smart contract?</h3>
+<p>It&rsquo;s worth noticing that <strong>not all staking pools are based on smart contracts</strong>.
+Therefore, not all of them are decentralized. It&rsquo;s more ideal when smart
+contracts own<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> the whole staking process, not the node operators or the
+service providers. Also, there should be a built-in incentivization mechanism to
+prevent malicious node operators. That said, <strong>not all smart contracts are
+secure</strong>, so you should ask more questions.</p>
+<h3 id="has-the-smart-contract-or-even-other-parts-of-the-system-been-audited-if-so-has-the-team-published-the-audit-reports">Has the smart contract (or even other parts of the system) been audited? If so, has the team published the audit reports?</h3>
+<p>There are many staking pools out there that are based on smart contracts. But we
+know that smart contracts are written by humans, and humans make mistakes. It&rsquo;s
+important to observe whether the developers behind the project have done their
+best to secure the system and resolve the vulnerabilities found. One indicator
+would be whether they have sought smart contract auditors to audit their code
+<strong>and</strong> whether they have published the reports with follow-up actions.</p>
+<h3 id="who-controls-the-withdrawal-key">Who controls the withdrawal key?</h3>
+<p>If you are more technical, you might even want to understand who controls the
+withdrawal credentials. For example, some staking pools make node operators
+delegate their withdrawal keys to a smart contract, which points to the staking
+pools. This prevents the node operators from withdrawing staked ETH or excessive
+rewards. To learn more about the withdrawal key, you could refer to the
+<a href="https://ethereum.org/en/developers/docs/consensus-mechanisms/pos/keys/">Ethereum documentation</a>.</p>
+<h3 id="what-is-the-liquidity-of-staking-pools">What is the liquidity of staking pools?</h3>
+<p>In normal staking, your staked ETH becomes illiquidable. But in liquid staking,
+a type of staking pool, you receive ERC-20 tokens that represent your staking
+rewards. You could then reinvest these tokens or use them as collateral. The
+liquidity doesn&rsquo;t only depend on whether the token is ERC-20 (fungible); it&rsquo;s
+also relevant to check whether you could resell your tokens back to the
+platform, the trading volumes of this token, and what the ratio vs. ETH is,
+etc., <strong>depending on your own investment preference</strong>.</p>
+<h3 id="is-the-project-open-source">Is the project open-source?</h3>
+<p>A common misconception is that being open-source only means publishing the code.
+Indeed, code transparency is one of the benefits of being open source. However,
+being open source also means the project welcomes community feedback, issues,
+and contributions. It&rsquo;s important to note that <strong>open source is not proof of
+secure code</strong> or trustworthiness, even though an active open source community is
+often seen as a positive signal.</p>
+<p>Do you have any feedback? Let me know if you feel any key information needs to
+be included to help more people understand this topic!</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>In some occassions, <strong>stakings pools</strong> is used interchangeably with **
+smart-contract based liquid staking**, and it&rsquo;s assumed that users interact
+with the platform using a non-custodial wallet.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>Note that smart contracts could also have some owner addresses with
+unreasonable privileges that compromise security.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+      
+      <div class="post-date">
+        <span class="g time">May 7, 2023 </span> &#8729;
+         
+         <a href="https://pswu.dev/tags/blockchain/">blockchain</a> <a href="https://pswu.dev/tags/ethereum/">ethereum</a>
+      </div>
+      
+    </section>
+    
+    <div id="comments">
+      <script src="https://utteranc.es/client.js"
+    repo=pswu11/pswu11.github.io
+    issue-term="pathname"
+    theme=github-light
+    crossorigin="anonymous"
+    async>
+</script>
+
+    </div>
+    
+  </div>
+</main>
+</body>
+</html>
